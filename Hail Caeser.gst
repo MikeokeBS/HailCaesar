@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="3" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="1" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3d5-580a-cc64-af21" name="Hail Caeser Core Rulebook"/>
     <publication id="8269-29c8-ecfa-1b1d" name="Army Lists: Biblical &amp; Classical"/>
@@ -28,6 +28,7 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
+    <categoryEntry id="3a14-ec7d-4efd-56f8" name="Configuration" hidden="false"/>
     <categoryEntry id="ce9c-2f14-348c-270c" name="Infantry" hidden="false"/>
     <categoryEntry id="855f-b0b3-132a-a0f4" name="Cavalry" hidden="false"/>
     <categoryEntry id="2418-461b-1947-a0f1" name="Skirmisher" hidden="false"/>
@@ -39,6 +40,7 @@
   <forceEntries>
     <forceEntry id="0959-ad13-b4bf-a152" name="Hail Caeser Detachment" hidden="false">
       <categoryLinks>
+        <categoryLink id="716f-5703-732c-ea1a" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
         <categoryLink id="7477-4806-f9d1-8243" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false"/>
         <categoryLink id="6919-1e39-acc7-dac0" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false"/>
         <categoryLink id="acd1-639a-bf63-73ff" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
