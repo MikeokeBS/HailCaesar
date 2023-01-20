@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="8df2-25f9-827a-fd03" name="Thematic Byzantine" revision="1" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <costTypes>
+    <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="de76-9644-2fb4-5752" name="Artillery" defaultCostLimit="-1.0" hidden="false"/>
+  </costTypes>
+  <profileTypes>
+    <profileType id="abbc-73a3-86b7-7213" name="Unit Stats"/>
+  </profileTypes>
+  <selectionEntries>
+    <selectionEntry id="e712-1280-b702-1a25" name="General" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aee-5e8a-5b93-15d1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="74ef-e541-0026-d6cb" name="General" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">General</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2eb7-babe-60a5-2ac1" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8133-e8c1-0b83-9dbf" name="Commander" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b0de-5e71-b2d5-7c62" name="Commander" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Commander</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9918-d405-17d9-0fa3" name="New CategoryLink" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7efc-42b4-c151-ef3f" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="73d2-9166-0236-ef99" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5be8-08ca-b145-5156" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8b11-bfac-7ac8-49ab" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="32.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f0c9-9f68-a7b4-6823" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins (Elite)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="43a7-2fec-88e6-9be9" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins (Elite)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2d69-e6c5-209c-303e" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d867-36c3-ac70-64ad" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="35.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="174b-8691-da34-45ba" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins (Elite, Extra Armour)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cfa8-0c15-cf62-f31f" name="Heavy infantry Kontaratoi with mixed ranks of long spears and javelins (Elite, Extra Armour)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4f39-b4b1-a587-8915" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1ef1-01ab-19e0-58c3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="38.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7102-8c5d-237a-c26b" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="bb28-4d0b-aad5-1ef7" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6620-d32a-7e5a-fe7f" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5eec-2dee-1e46-dbc8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="33.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="223d-b533-791b-f0fe" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows (Elite)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c407-4244-f03b-d8a6" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows (Elite)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cec7-6f4a-19c4-29b1" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="29cb-ba67-034d-f2fe" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="36.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5905-22b8-6d08-3cd9" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows (Elite, Extra Armour)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9d30-77ec-6f9d-185a" name="Heavy infantry Kontaratoi with mixed ranks of long spears and bows (Elite, Extra Armour)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6093-2021-83fd-a5ee" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="af1a-cb7e-8618-d89e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="39.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff29-2260-c45c-d5da" name="Allied Rus heavy infantry Varangians with assorted arms" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9a6f-c604-8a3f-66c0" name="Allied Rus heavy infantry Varangians with assorted arms" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2670-c647-66c4-7787" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6c7b-4362-af8a-bcf9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="27.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d75f-7a8d-efee-4a96" name="Allied Rus heavy infantry Varangians with double-handed axes" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6d68-6c68-4d70-342f" name="Allied Rus heavy infantry Varangians with double handed axes" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2/0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0aac-7a58-eea6-4bce" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8f4f-be90-9707-e167" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="28.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cecb-6639-ce3f-8a9d" name="Allied Slavic medium infantry with spears and/or javelins" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1ccf-041a-a4cf-cfdc" name="Allied Slavic medium infantry with spears and/or javelins" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="53e6-4103-790d-6e49" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0911-74c1-6d7e-2daa" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1341-99e4-3fd2-2a79" name="Allied Slavic medium infantry with double-handed axes" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="62b1-47a2-48d3-3a1a" name="Allied Slavic medium infantry with double-handed axes" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2/0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4282-de61-facd-3911" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a141-f656-e26f-e5f9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72fd-e383-3f31-afe6" name="Allied Slav or Rus light infantry archers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ec0d-e83b-d12f-1fd5" name="Allied Slav or Rus light infantry archers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">4</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6e47-7ec2-a476-538d" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f606-248d-e9f1-30a9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="21.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80a7-d56f-6610-60e7" name="Allied Slav or Rus light infantry archers (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="de00-1c3f-8a10-e99d" name="Allied Slav or Rus light infantry archers (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="291a-5f96-e762-e738" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7da8-169f-a304-07d6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="15.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9606-79a4-c11e-34d3" name="Psiloi skirmishers armed with javelins (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b4e7-4e3c-45e6-1f78" name="Allied Slav or Rus light infantry archers (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6ce3-c656-0849-48b8" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8a8c-55a3-cacb-935e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="11.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a5a-909e-70a2-73af" name="Skirmishers armed with slings or bows (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6e76-eddf-7542-9b30" name="Skirmishers armed with slings or bows (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6173-8ce3-f2f3-1ccd" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="84a2-12d1-a450-1dcc" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3c0-a3d1-31c8-322d" name="Solenarion Skirmishers armed with slings or bows (Small)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7835-6970-2934-bfc7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f2ec-8367-8b90-b27f" name="Solenarion Skirmishers armed with slings or bows (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Marksmen - Re-roll one missed ranged attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9d4b-b92d-a1dc-6d52" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b87a-bc2c-35be-6daa" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="13.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2308-6b5a-fc1f-8a66" name="Skirmishers armed with staffslings (Small)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c0d-0859-b87d-45ec" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="82ad-7b93-5cf1-89c8" name="Skirmishers armed with staffslings (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="756d-4f34-cb24-2215" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8290-456f-9574-b92e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d780-c028-a9c2-38a5" name="Infantry with fire-siphons (Tiny)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e4e-3126-dfab-4694" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="14c2-ae57-aed7-b3c2" name="Infantry with fire-siphons (Tiny)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">1</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">1</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">1</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">1</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Marksmen - Re-roll one missed ranged attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="fd07-dfbb-ce03-b616" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="744f-8a2f-d354-b80a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="10.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87c7-d3ef-454d-86ff" name="Kavallaroi, Brave Tagmata Cataphracts heavy cavalry with mix of lances and bows" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7354-52fb-1320-f9b3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0ff5-5c08-a3ff-00f0" name="Kavallaroi, Brave Tagmata Cataphracts heavy cavalry with mix of lances and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Brave - Shaken units rally on D6 roll of 4+ at end of command phase if more than 12&quot; from enemy</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f5a0-fc9f-017a-4225" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b507-b4ec-6d9e-9bde" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="44.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7075-5089-6dbf-f2e2" name="Kavallaroi, Tagmata Cataphracts heavy cavalry with mix of lances and bows" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8871-31ff-ed2d-1f5f" name="Kavallaroi, Tagmata Cataphracts heavy cavalry with mix of lances and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder
+Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6456-bb0a-6a3a-e31d" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="af87-5353-791d-92b9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="41.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e23d-032f-7077-f3d9" name="Kavallaroi, heavy cavalry with mix of lances and bows" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="22df-108c-aa5b-d3f4" name="Kavallaroi, heavy cavalry with mix of lances and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="24e0-13b6-659d-2d37" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7390-262f-a991-3a7a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="37.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ead-2609-6391-5cb2" name="Light cavalry trapezitoi armed with javelins (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8219-61b5-2ccc-1322" name="Light cavalry trapezitoi armed with javelins (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="031d-a2fb-80cb-7c6c" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9e6a-c578-afa5-ffac" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="103a-df63-acb4-bd15" name="Light cavalry trapezitoi armed with javelins incorporating bow armed riders (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7bcb-fb8c-898f-1120" name="Light cavalry trapezitoi armed with javelins incorporating bow armed riders (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1	</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e584-62a9-25a7-30d8" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b202-95a4-936c-d6d6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="20.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ebc-9951-87da-89da" name="Mercenary light cavalry with bows and javelins (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="73a2-e42b-1c13-1068" name="Mercenary light cavalry with bows and javelins (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2	</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f32d-c167-fb56-6407" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b20b-f7b2-3f5f-66ff" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="21.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="29c8-6c12-b35c-fe08" name="Mercenary horse archers (Small)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9d16-bb55-efc2-826e" name="Mercenary horse archers (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2	</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5bbf-78bf-6ce2-0ceb" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2f1e-6521-8803-266d" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="79aa-a8be-9cdc-860f" name="Georgian or Armenian allied heavy cavalry with lances" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="138d-ea74-ec1e-bb27" name="Georgian or Armenian allied heavy cavalry with lances" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3/0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9704-31ed-8d26-cbae" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8080-6710-2dbb-c2cb" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="34.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d347-2960-cc71-04bf" name="Georgian or Armenian allied heavy cavalry with lances and bows" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="634f-bbf5-e23a-9de3" name="Georgian or Armenian allied heavy cavalry with lances" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="32fc-191a-e285-0d23" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aef5-893d-794e-a882" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="36.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2b0-0c71-ec96-2aa7" name="Light artillery bolt thrower" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eceb-d7e1-c715-82c6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8718-377d-3b5e-4cf0" name="Light artillery bolt thrower" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">1</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">1</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">3</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Drilled - Free move on failed order. Units may move through other drilled units without risk of disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c168-e805-b24b-4e44" name="New CategoryLink" hidden="false" targetId="1a5d-a74e-c10a-086e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="275a-dd2a-7ad8-3805" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="18.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8812-b2ce-6870-fc67" name="Upgrade" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6968-04fd-6d0c-bdfc" name="Levy" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c85c-e742-c785-0764" name="Levy" hidden="false">
+              <description>Must roll 4+ on a D6 to recover disorder at end of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bb93-e43d-0b58-34d2" name="Brave" hidden="false">
+              <description>Shaken units rally on D6 roll of 4+ at end of command phase if more than 12&quot; from enemy</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="cba4-a709-50c7-aa60" name="Drilled" hidden="false">
+              <description>Free move on failed order. Units may move through other drilled units without risk of disorder</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1668-69bf-4aca-48c1" name="Elite" hidden="false">
+              <description>Recover from disorder on D6 roll of 4+ at start of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b7c5-8e76-96e0-c1e3" name="Fanatic" hidden="false">
+              <description>Morale Save +1 until shaken</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="71b7-bda7-c28b-e12a" name="Feigned Flight" hidden="false">
+              <description>The unit is allowed to move out of a combat engagement</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4d6a-292b-b8a1-105d" name="Frenzied Charge" hidden="false">
+              <description>Must charge if within range, with three moves allowed on any successful order/initiative</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dd5d-4e0d-178a-ee30" name="Freshly Raised" hidden="false">
+              <description>Check unit in first round of combat as per the Hail Caesar rulebook</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-1.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="21cb-796e-a9af-a9a5" name="Marauders" hidden="false">
+              <description>Ignore distance penalty for command</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ab90-a396-6e62-a237" name="Marksmen" hidden="false">
+              <description>Re-roll one missed ranged attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3176-096d-8d6a-350d" name="Militia" hidden="false">
+              <description>No move on roll equal to commander’s leadership when given orders</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8140-babb-4c43-04ee" name="Parthian Shot" hidden="false">
+              <description>Can evade and make closing shots as a reaction to an enemy charge</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3940-4378-9de1-58db" name="Steady" hidden="false">
+              <description>Ignore the first ‘6’ rolled for break tests from ranged attacks each turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="65dd-4792-026b-1feb" name="Stubborn 6+" hidden="false">
+              <description>Re-roll one failed morale save if save is 6</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f49b-44c6-278c-4223" name="Phalanx" hidden="false">
+              <description>Lost combats up to two count as draws until the unit is shaken </description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ca16-13d7-3be8-4258" name="Stubborn 5+" hidden="false">
+              <description>Re-roll one failed morale save if save is 5</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="2.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9ee3-74a7-9a76-b1e5" name="Wild Fighters" hidden="false">
+              <description>Re-roll up to three missed hand-to-hand combat attacks in their first round of combat</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="de71-298b-e935-1454" name="Stubborn 3+" hidden="false">
+              <description>Re-roll one failed morale save if save is 3</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="4.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4110-5123-40a6-9cc7" name="Valiant" hidden="false">
+              <description>Break test re-roll once per battle</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fa8f-e961-a11b-7291" name="Tough Fighters" hidden="false">
+              <description>Re-roll one missed hand-to-hand combat attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3fe1-1048-d162-532e" name="Stubborn 4+" hidden="false">
+              <description>Re-roll one failed morale save if save is 4</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
