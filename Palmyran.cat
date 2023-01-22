@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a885-1e9f-0dfb-87c9" name="Palmyrian" revision="1" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a885-1e9f-0dfb-87c9" name="Palmyran" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
@@ -8,7 +8,52 @@
     <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="de76-9644-2fb4-5752" name="Cataphracts" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="b8ef-0831-51ed-a667" name="Archers" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="9ab4-992c-45ac-8ae0" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="f15d-2e57-5cce-8494" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
+  <forceEntries>
+    <forceEntry id="d273-adbd-e5b1-1c89" name="Palmyran Detachment" hidden="false">
+      <constraints>
+        <constraint field="f15d-2e57-5cce-8494" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="94e0-301a-1bef-2cff" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b797-424b-1bc5-27e2" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
+        <categoryLink id="2242-d2cb-f705-617c" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b140-22c4-bbf2-ad43" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e7-183e-fb7c-0d67" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="728c-f285-0e5b-6e35" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b6-8f64-ff07-4804" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e459-5139-e09c-58ba" name="Cataphract" hidden="false" targetId="500f-03c4-3f88-de1a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d9-b4e6-102a-5840" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="08d5-f5db-1311-5ab7" name="Archer" hidden="false" targetId="a01b-e9bf-40b9-9a8a" primary="false"/>
+        <categoryLink id="5d2c-c2c2-2c07-0f49" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="5db0-d009-fb93-7419" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3df2-dc4c-1c63-f362" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+        <categoryLink id="0dc4-1be7-21dd-ab25" name="Cavalry" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="3dae-ca2e-aadc-bed3" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d88b-3bc5-411d-26cf" name="Skirmisher" hidden="false" targetId="2418-461b-1947-a0f1" primary="false">
+          <constraints>
+            <constraint field="0dc0-9d58-7884-5916" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="a01a-77b0-1ceb-a75e" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry id="e712-1280-b702-1a25" name="General" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -30,16 +75,18 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="2eb7-babe-60a5-2ac1" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="true"/>
+        <categoryLink id="d6f2-7216-8363-e5ab" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8133-e8c1-0b83-9dbf" name="Commander Ld 7" hidden="false" collective="false" import="true" type="model">
@@ -62,13 +109,14 @@
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="284a-a0f0-1a21-2746" name="Infantry 25%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -82,13 +130,14 @@
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ddb-9603-2148-df81" name="Cavalry 25%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -102,13 +151,14 @@
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3703-83b1-e11b-fa73" name="Divisions 4+ units.  1 in 3 divisions must be rated as freshly raised" hidden="false" collective="false" import="true" type="upgrade">
@@ -123,13 +173,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="869b-5e7a-a9a2-2d71" name="Skirmishers per division 50% of infantry." hidden="false" collective="false" import="true" type="upgrade">
@@ -143,13 +194,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1920-a9cc-b88e-56bc" name="Cataphracts 1+" hidden="false" collective="false" import="true" type="upgrade">
@@ -163,13 +215,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7804-25c1-c816-b3cf" name="Archers 20%+ of infantry" hidden="false" collective="false" import="true" type="upgrade">
@@ -183,13 +236,13 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9dae-bfb7-c7b3-d2b3" name="Commander Ld8" hidden="false" collective="false" import="true" type="model">
@@ -215,16 +268,17 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02f6-1c73-601b-a58b" name="Cataphract cavalry armed with kontos" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="02f6-1c73-601b-a58b" name="Cataphract Cav Kontos" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="467b-67b1-0995-27a2" name="Cataphract cavalry armed with kontos" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -241,6 +295,8 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="cc76-f4d2-2bca-2e55" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="8f71-5a08-c0af-372a" name="Cataphract" hidden="false" targetId="500f-03c4-3f88-de1a" primary="false"/>
+        <categoryLink id="0fec-942a-7e0e-0e19" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c50e-0e13-6217-9323" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -250,16 +306,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6efa-2f0a-7378-ee64" name="Caravan guard cataphract camels armed with bows and spears (Small)" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2ea-1fcd-c58d-a290" type="max"/>
-      </constraints>
+    <selectionEntry id="6efa-2f0a-7378-ee64" name="Cataphract Camels (Sml)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="efca-eed1-5f6b-052c" name="Caravan guard cataphract camels armed with bows and spears (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -276,6 +330,8 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="4d18-9cee-3abd-d391" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="f8bf-0fb6-c495-6eb6" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="93eb-eed9-3bdc-6073" name="Cataphract" hidden="false" targetId="500f-03c4-3f88-de1a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="53d5-1e5e-7f68-95d8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -285,13 +341,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4296-91cf-0a29-32f3" name="Horse archers (Small)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4296-91cf-0a29-32f3" name="Horse Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="9fb6-4ca6-7532-6cdf" name="Horse archers (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -308,6 +365,8 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="990c-cbbc-b6db-8a5a" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="39d6-e9fb-b9a9-36e3" name="Archer" hidden="false" targetId="a01b-e9bf-40b9-9a8a" primary="false"/>
+        <categoryLink id="ad9d-1f3e-47e2-3e82" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3f36-2bf8-78d4-1fa1" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -316,14 +375,15 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
-        <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="1.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="497e-27e4-59de-8e82" name="Light cavalry armed with javelins (Small)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="497e-27e4-59de-8e82" name="Lt Cav (Sml)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="041a-e20f-c7ec-c531" name="Light cavalry armed with javelins (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -340,6 +400,7 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="3b49-30e8-f9b9-cce1" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="bd56-9319-c167-25cc" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ba98-8684-f6e6-666c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -348,14 +409,15 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f17d-6ea3-3e69-5651" name="Arab camel mounted light cavalry with bows and javelins (Small)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f17d-6ea3-3e69-5651" name="Arab Camel Lt Cav (Sml)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50b2-f5b1-0fc9-581f" type="max"/>
       </constraints>
@@ -375,6 +437,7 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="8538-36cb-fe95-1e65" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="1af6-e247-4aed-3b0c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4818-6bbf-be3f-73c7" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -383,14 +446,15 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="20.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c8ab-4ebd-8ad2-46f3" name="Heavy infantry Roman legionaries armed with pila and swords" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c8ab-4ebd-8ad2-46f3" name="Roman Hvy Inf" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="218c-c386-6eae-3d29" name="Heavy infantry Roman legionaries armed with pila and swords" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -407,6 +471,7 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="4e4d-907e-dadc-6ac3" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="521f-994e-aabe-357a" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1979-8f3a-8472-7b1e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -415,14 +480,15 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="32.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="83c2-f607-11d1-320d" name="Medium infantry auxiliaries or locally equipped spearmen" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="83c2-f607-11d1-320d" name="Med Inf Auxiliaries" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3bd6-bd8d-dc77-6e1b" name="Medium infantry auxiliaries or locally equipped spearmen" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -439,6 +505,8 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="c801-232c-b33f-17ba" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="8021-6862-be0c-f270" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="92b1-194c-9189-4cd4" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d9f1-8331-1e3d-5c3e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -447,14 +515,15 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="560d-6323-cdd0-2de9" name="Medium Infantry Archers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="560d-6323-cdd0-2de9" name="Med Inf Archers" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ceb9-319e-0367-aa7a" name="Medium Infantry Archers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -471,6 +540,9 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="504d-55a7-8a3a-e3b4" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="c02d-d1a5-fb39-fd78" name="Archer" hidden="false" targetId="a01b-e9bf-40b9-9a8a" primary="false"/>
+        <categoryLink id="c9fd-b730-d607-cd72" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="4622-483d-236b-10a0" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="851d-1141-11f3-ef92" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -480,13 +552,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="92e5-87e8-ea8f-8fb8" name="Light Infantry Archers (Small)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="92e5-87e8-ea8f-8fb8" name="Lt Inf Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="4fa5-cd80-4974-5819" name="Light Infantry Archers (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -503,6 +576,9 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="90eb-ae60-62a2-6c73" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="f108-f1ca-8eb3-797a" name="Archer" hidden="false" targetId="a01b-e9bf-40b9-9a8a" primary="false"/>
+        <categoryLink id="7522-cd2d-bfa3-8e0f" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="0510-48f8-4464-bbf5" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5cc3-21c2-60ab-1551" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -512,13 +588,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae4d-c94c-adac-e044" name="Light Infantry Archers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ae4d-c94c-adac-e044" name="Lt Inf Archers" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="cab9-3370-3bc2-bf35" name="Light Infantry Archers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -535,6 +612,9 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
       </profiles>
       <categoryLinks>
         <categoryLink id="0f5c-8eda-d256-3567" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="3baf-0216-65fe-035f" name="Archer" hidden="false" targetId="a01b-e9bf-40b9-9a8a" primary="false"/>
+        <categoryLink id="544d-7ae8-2113-1f0a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="b8da-b12a-7fb1-bf8c" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ea28-40e3-a8f0-af52" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -544,13 +624,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="64b7-8fda-a3c0-a77d" name="Skirmishers with javelins (Small)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="64b7-8fda-a3c0-a77d" name="Skirmishers Javelins (Sml)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="1e00-2612-6084-ab83" name="Skirmishers with javelins (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -575,14 +656,18 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="11.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
-        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d1f-1484-afbc-ff77" name="Skirmishers with bows (Small) (up to 25% of skirmishers)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7d1f-1484-afbc-ff77" name="Skirmishers Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="9791-1a54-0cbf-1ce6" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="80ca-e52b-a91c-283b" type="max"/>
+      </constraints>
       <profiles>
         <profile id="3988-3a77-39fc-b835" name="Skirmishers with bows, (Small) (up to 25% of skirmishers)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -607,14 +692,17 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
-        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edb6-7957-182c-e18b" name="Skirmishers with slings (Small) (up to 25% of skirmishers)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="edb6-7957-182c-e18b" name="Skirmishers Slings (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="9791-1a54-0cbf-1ce6" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="0053-e884-25b6-c682" type="max"/>
+      </constraints>
       <profiles>
         <profile id="a902-6ecd-3088-78e5" name="Skirmishers with slings (Small) (up to 25% of skirmishers)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
           <characteristics>
@@ -639,11 +727,12 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
         <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
-        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
-        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
         <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -657,7 +746,6 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
             </rule>
           </rules>
           <costs>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
@@ -665,6 +753,8 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
@@ -675,13 +765,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
@@ -692,13 +783,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
@@ -709,13 +801,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
@@ -726,13 +819,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
@@ -743,13 +837,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
@@ -760,13 +855,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
@@ -777,13 +873,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-1.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
@@ -794,13 +891,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
@@ -811,13 +909,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
@@ -828,13 +927,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
@@ -845,13 +945,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
@@ -862,13 +963,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
@@ -879,13 +981,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
@@ -896,13 +999,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
@@ -913,13 +1017,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="2.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -930,13 +1035,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
@@ -947,13 +1053,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="4.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
@@ -964,13 +1071,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -981,13 +1089,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
@@ -998,13 +1107,14 @@ Every third division must be rated as freshly raised at a discount of 1 point pe
           </rules>
           <costs>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
-            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
             <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
             <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Cataphracts" typeId="de76-9644-2fb4-5752" value="0.0"/>
             <cost name="Archers" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="9ab4-992c-45ac-8ae0" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="f15d-2e57-5cce-8494" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
