@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
@@ -12,12 +12,13 @@
     <costType id="2017-f20f-bd2b-97c7" name="Artillery (M)" defaultCostLimit="0.0" hidden="false"/>
     <costType id="ba03-9173-45e5-7506" name="Artillery (H)" defaultCostLimit="0.0" hidden="false"/>
     <costType id="b0c2-4fb3-b95e-4066" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
-    <costType id="5fd2-fbc9-dc09-18de" name="Pila" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="5fd2-fbc9-dc09-18de" name="Pila" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="7954-b3bd-e1f2-c185" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <forceEntries>
     <forceEntry id="c5b5-f15f-44de-2eca" name="Middle Imperial Roman Detachment" hidden="false">
       <constraints>
-        <constraint field="3800-df83-f0d8-bd42" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b64-cbd2-9e1e-5452" type="min"/>
+        <constraint field="7954-b3bd-e1f2-c185" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b64-cbd2-9e1e-5452" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="6806-8cb1-4aa6-aefb" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
@@ -39,19 +40,9 @@
             <constraint field="selections" scope="ce9c-2f14-348c-270c" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="5fac-41a1-4c24-a77c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="204c-00f3-7a85-41ba" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false">
+        <categoryLink id="2e05-9b61-eeb5-7900" name="Legion" hidden="false" targetId="3c9f-a578-5486-937c" primary="false">
           <constraints>
-            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="09e2-e218-ffb0-4698" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="a7c8-4930-ddd5-e0c4" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false">
-          <constraints>
-            <constraint field="b0c2-4fb3-b95e-4066" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="4cd7-ab21-77c2-2525" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="3ddd-610f-59d6-51a9" name="Pila" hidden="false" targetId="4ca9-b654-f480-3d0c" primary="false">
-          <constraints>
-            <constraint field="de76-9644-2fb4-5752" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="e3a4-3c7c-df1b-b3f4" type="max"/>
+            <constraint field="b0c2-4fb3-b95e-4066" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="9eed-853d-97ea-de89" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -93,6 +84,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="284a-a0f0-1a21-2746" name="Infantry 50%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -117,6 +110,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ddb-9603-2148-df81" name="Cavalry 50%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -141,6 +136,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3703-83b1-e11b-fa73" name="Divisions 4+ units." hidden="false" collective="false" import="true" type="upgrade">
@@ -165,6 +162,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1920-a9cc-b88e-56bc" name="Artillery" hidden="false" collective="false" import="true" type="upgrade">
@@ -183,12 +182,12 @@
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
-        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
         <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
         <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7804-25c1-c816-b3cf" name="Legion 50%+ of infantry" hidden="false" collective="false" import="true" type="upgrade">
@@ -213,6 +212,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9dae-bfb7-c7b3-d2b3" name="Commander" hidden="false" collective="false" import="true" type="model">
@@ -246,6 +247,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="42a6-aad5-c017-5de3" name="Skirmishers per division 50% of infantry" hidden="false" collective="false" import="true" type="upgrade">
@@ -270,6 +273,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc17-13ff-8491-ea49" name="General Ld9" hidden="false" collective="false" import="true" type="model">
@@ -307,6 +312,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cdd2-76b7-9b6c-72f9" name="Legionary Hvy Inf" hidden="false" collective="false" import="true" type="unit">
@@ -326,9 +333,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="94fe-0c7b-1197-ae29" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="9c4d-8263-6ef0-d1a2" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="552a-3e7f-ece9-1572" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="ece4-803a-095c-4bbe" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6647-cbde-49ff-0da6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -346,6 +350,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ccbd-e149-2a17-22e9" name="Legionary Hvy Inf (Raw Recruits)" hidden="false" collective="false" import="true" type="unit">
@@ -365,9 +371,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="45b8-078c-8885-82b2" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="64b8-8351-acde-0b4a" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="eac1-88ec-d979-d503" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="a37b-713c-1f76-5680" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="504e-fb90-0130-c2f4" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -385,6 +388,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="621a-4b52-bea5-4655" name="Legionary Hvy Inf (Levy) (Raw Recruits)" hidden="false" collective="false" import="true" type="unit">
@@ -404,9 +409,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="0c3e-5a1e-06cc-e5a2" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="c3c4-5957-0bbd-2304" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="0eea-8f7f-3a53-245d" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="eafe-ef93-837e-fa01" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="88e1-c1ca-6d28-8ec6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -424,6 +426,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c46-4caf-8899-32a1" name="Legionary Hvy Inf (Drilled)" hidden="false" collective="false" import="true" type="unit">
@@ -443,9 +447,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="402c-4012-b8b1-41f5" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="ee47-2e2e-1df4-cd1e" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="464c-9790-3fbe-33f4" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="6992-79f1-4462-1569" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6c2b-c141-3a51-a14f" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -463,6 +464,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="167c-c3a6-02ea-04ad" name="Legionary Hvy Inf (Pila)" hidden="false" collective="false" import="true" type="unit">
@@ -482,10 +485,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="cc0e-aac4-fcb6-f1f9" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="e4b0-da9c-5527-c5ba" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="8f39-9673-e9f5-6345" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="ca37-405c-adfd-1985" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="5268-1cb0-f6ad-8a54" name="Pila" hidden="false" targetId="4ca9-b654-f480-3d0c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d3ea-9304-1b30-d96f" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -503,6 +502,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="620e-5aa0-a021-83d3" name="Legionary Med Inf" hidden="false" collective="false" import="true" type="unit">
@@ -522,9 +523,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="e137-be7e-8930-e4a4" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="873d-24a7-bc19-cc5d" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="eee1-9962-4787-01ff" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="53d9-117c-013f-b6d9" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c2fb-d7b6-8fee-13f8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -542,6 +540,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b41a-c5aa-b585-2164" name="Legionary Med Inf (Levy)" hidden="false" collective="false" import="true" type="unit">
@@ -561,9 +561,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="fd0f-59ef-fc8f-a414" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="5cd0-2ef2-dd96-910b" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="0976-7bbf-af1c-6717" name="Legion" hidden="false" targetId="5bdf-8013-7bdf-438e" primary="false"/>
-        <categoryLink id="1b65-5284-2177-fa1b" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eb2a-d169-59e1-efde" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -581,6 +578,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf9d-8ff8-8b2d-6d33" name="Auxiliary Med Inf Palestinian Clubmen" hidden="false" collective="false" import="true" type="unit">
@@ -603,8 +602,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="f976-f32b-ffa2-7ed4" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="aa29-a015-2f92-49ce" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="03f6-61c2-96ca-7d8c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5571-ba20-39a0-5d29" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -622,6 +619,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4534-5cee-cc55-f5f1" name="Auxiliary Lt Inf" hidden="false" collective="false" import="true" type="unit">
@@ -641,8 +640,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="8c43-24ef-6113-838d" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="92fb-dbab-0bbb-7580" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="72b4-0fc0-4559-166c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e322-1a78-6139-d34c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -660,6 +657,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ccea-61a0-2470-f001" name="Auxiliary Hvy Inf (Levy) (Raw Recruits)" hidden="false" collective="false" import="true" type="unit">
@@ -679,8 +678,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="3321-3fed-b411-8d1c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="20e2-4e9a-77bc-6862" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="7361-04fe-df85-6110" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6e4f-d476-2fd4-eeda" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -698,6 +695,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e290-785f-29ca-e05a" name="Auxiliary Hvy Inf (Raw Recruits)" hidden="false" collective="false" import="true" type="unit">
@@ -717,8 +716,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="4f4a-9059-a919-ac5c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="4d76-c573-c3ea-c29b" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="075b-087c-53bd-efa1" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="79d4-d183-f0b0-e3dd" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -736,6 +733,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5082-4a43-9294-de3d" name="Auxiliary Hvy Inf" hidden="false" collective="false" import="true" type="unit">
@@ -755,8 +754,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="b312-f767-71f1-8a50" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="8b7f-484d-8d05-ccbe" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="ac71-bc8c-80d5-4e7c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eaa3-5367-eaf1-11f5" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -774,6 +771,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="255a-dcec-cb75-d718" name="Auxiliary Med Inf (Levy)" hidden="false" collective="false" import="true" type="unit">
@@ -793,8 +792,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="1818-0377-fff2-c429" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="25e1-c666-4f38-34ef" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="d149-0d07-6d08-ad0c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c54d-970a-4cb6-d6f3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -812,6 +809,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="814b-3c4d-454d-5da8" name="Auxiliary Med Inf" hidden="false" collective="false" import="true" type="unit">
@@ -831,8 +830,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="19c7-0531-c652-78ae" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="7930-bfcf-7f2b-1f58" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="be5b-3420-0212-6132" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="912f-2410-7c35-361e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -850,6 +847,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="96bc-8fe3-9df2-dfdf" name="Auxiliary Lt Inf (Levy)" hidden="false" collective="false" import="true" type="unit">
@@ -869,8 +868,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="f21f-378b-236a-c9e9" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="5cbf-b57c-0e67-7ada" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="e5eb-5cc1-be85-53d2" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3dc2-a354-0f09-f400" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -888,6 +885,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9997-9c99-48db-f1fb" name="Auxiliary Lt Inf Lanciarii" hidden="false" collective="false" import="true" type="unit">
@@ -907,8 +906,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="428d-b73e-ea42-d774" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="ceca-6acf-c434-97b6" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="da61-355f-23da-9330" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="86a8-1199-e599-6fc5" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -926,6 +923,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a234-4bed-04f5-5742" name="Auxiliary Med Inf Archers (Levy)" hidden="false" collective="false" import="true" type="unit">
@@ -945,8 +944,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="9086-7080-f1fa-e6ac" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="69c5-97b8-2c8a-50fc" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="d411-7f55-f866-2a72" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cd43-8073-066c-7f58" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -964,6 +961,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2da2-3bfd-e7e9-347f" name="Auxiliary Med Inf Archers" hidden="false" collective="false" import="true" type="unit">
@@ -983,8 +982,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="790a-4e1d-3b2d-dad8" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="9279-761f-3158-8662" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="5bec-7a8c-193c-fd33" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f9b1-d7eb-a42d-321a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1002,6 +999,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6aa1-96f7-0dce-190e" name="Auxiliary Lt Inf Archers" hidden="false" collective="false" import="true" type="unit">
@@ -1021,8 +1020,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="0569-aa8c-622a-4261" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="914e-4c97-c576-afee" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="2467-b3e2-69df-8f43" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cd4b-8553-dac3-e5e5" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1040,6 +1037,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0c6c-f709-ce33-ab84" name="Auxiliary Lt Inf Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1059,8 +1058,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="fa49-67f7-5f1c-6620" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="ff9b-61e6-490c-86a7" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="50f2-d844-aa11-4a98" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0fa0-cc56-349d-eb68" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1078,6 +1075,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c46-5bbf-979a-06e4" name="Skirmishers Javelins (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1097,7 +1096,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="cc91-92d2-62f5-356e" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
-        <categoryLink id="7b3d-971f-bcdf-ade0" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
         <categoryLink id="2cdf-76e8-0290-9a02" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1116,6 +1114,8 @@
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="82c3-75d4-d24e-156d" name="Skirmishers Slings/Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1135,7 +1135,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="41e0-ce7d-6ba2-75f7" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
-        <categoryLink id="8780-eb4b-4903-d0e5" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
         <categoryLink id="ab90-34a7-a7dd-04b8" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1154,6 +1153,8 @@
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="93c0-5e06-18e9-0f51" name="Numeri Barbarian Med Inf Warbands" hidden="false" collective="false" import="true" type="unit">
@@ -1173,8 +1174,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="4198-08d8-e8aa-ee0c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="e837-43c0-e71d-4c59" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="c143-6035-5d9d-fbb7" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="33ba-860f-6e45-4439" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1192,6 +1191,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c1d4-74ba-940f-27ec" name="Auxiliary Med Cav" hidden="false" collective="false" import="true" type="unit">
@@ -1211,7 +1212,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="80c3-8897-3aee-5a37" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="217e-8b35-82da-baf3" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3d11-00b4-ef04-dd3c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1229,6 +1229,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ab4-ee90-2ec0-01c6" name="Auxiliary Hvy Cav" hidden="false" collective="false" import="true" type="unit">
@@ -1248,7 +1250,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="5649-0e64-9ae7-1899" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="f045-2892-8fc7-cbaf" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ab0f-87dc-64cd-8f52" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1266,6 +1267,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c0d9-f82f-99d9-df20" name="Cataphract Cav Kontos" hidden="false" collective="false" import="true" type="model">
@@ -1288,7 +1291,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="ab7a-92ad-9923-d6d1" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="accd-f5ae-c044-04b7" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="01a3-2526-abbc-43d0" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1306,6 +1308,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9234-6a6e-cd3c-50c2" name="Auxiliary Lt Cav Javs (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1325,7 +1329,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="b633-b3d6-bbde-5549" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="23fe-3de2-78d8-875c" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6ddc-6be4-3a10-c202" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1343,6 +1346,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb22-1535-c86e-c5cc" name="Auxiliary Lt Cav Javs (Fgd Flight) (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1362,7 +1367,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="b53c-80e5-f6b4-f056" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="d549-f178-3d9c-5e09" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="30fc-c59b-6ed1-98cb" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1380,6 +1384,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ddb-be6c-b1ce-e953" name="Auxiliary Lt Cav Bows(Fgd Flight) (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1399,7 +1405,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="4ee0-e8b1-fa3d-5d16" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="9716-2e5f-3b09-0637" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e268-cc81-6a81-e5df" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1417,6 +1422,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e0ba-cee9-9a81-4e7e" name="Camel Mounted Lt Cav (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1439,7 +1446,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="d0cd-0e98-e97a-d811" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="fefa-4713-af17-294a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="52e2-6abf-dbed-28be" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1457,6 +1463,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5f9a-8235-d4a9-e9c5" name="Light Artillery Carroballista Bolt Throwers" hidden="false" collective="false" import="true" type="unit">
@@ -1476,7 +1484,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="c51c-4683-a80e-652b" name="New CategoryLink" hidden="false" targetId="1a5d-a74e-c10a-086e" primary="true"/>
-        <categoryLink id="9c83-4eef-1b5f-5601" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f9d6-45d8-790a-79e7" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1494,6 +1501,8 @@
         <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e832-91dd-391f-5908" name="Medium Artillery Onagers" hidden="false" collective="false" import="true" type="unit">
@@ -1513,7 +1522,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="4b94-d869-4b9e-5526" name="New CategoryLink" hidden="false" targetId="1a5d-a74e-c10a-086e" primary="true"/>
-        <categoryLink id="6821-8028-325b-8d4a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="51c6-a271-d4cd-bc32" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1531,6 +1539,8 @@
         <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ebd6-2d8e-2e3a-2c7f" name="Heavy Artillery Ballistae" hidden="false" collective="false" import="true" type="unit">
@@ -1550,7 +1560,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="44fd-3d59-d1e5-92ee" name="New CategoryLink" hidden="false" targetId="1a5d-a74e-c10a-086e" primary="true"/>
-        <categoryLink id="68ff-41d1-f06d-5990" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="987e-f5ad-a4ac-e2e0" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1568,6 +1577,8 @@
         <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1593,6 +1604,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
@@ -1614,6 +1627,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
@@ -1635,6 +1650,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
@@ -1656,6 +1673,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
@@ -1677,6 +1696,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
@@ -1698,6 +1719,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
@@ -1719,6 +1742,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
@@ -1740,6 +1765,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
@@ -1761,6 +1788,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
@@ -1782,6 +1811,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
@@ -1803,6 +1834,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1824,6 +1857,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
@@ -1845,6 +1880,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1866,6 +1903,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
@@ -1887,6 +1926,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1908,6 +1949,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -1929,6 +1972,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1950,6 +1995,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
@@ -1971,6 +2018,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -1992,6 +2041,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
@@ -2013,6 +2064,8 @@
             <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
             <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
             <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
