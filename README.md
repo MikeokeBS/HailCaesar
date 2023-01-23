@@ -12,10 +12,15 @@ Hail Caesar Battlescribe Repository
 ## Overview ##
 
 This is a work in progress Army Roster builder for Hail Caesar, using the Battlescribe platform.
+
 All written armies should have exceptions to inform you if your army does not meet the requirements according to the army books.
+
 Exceptions to the above:
+
 Palmyrans - I cannot find a way to force you to have every third detachment as Freshly Raised.  You can add this in using the upgrade function of each unit.
+
 Middle Imperial Roman - Battlescribe won't force you to have 3 Legion units for each Artillery piece, or limit the number of Heavy Artillery as a % of Light or Medium
+
 
 Please do not use the "Hail Caesar" detachment, use the one named for your army.  The HC detachment is minimal and has no restrictions.
 
