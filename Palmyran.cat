@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a885-1e9f-0dfb-87c9" name="Palmyran" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a885-1e9f-0dfb-87c9" name="Palmyran" revision="6" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="de76-9644-2fb4-5752" name="Cataphracts" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="b8ef-0831-51ed-a667" name="Archers" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="de76-9644-2fb4-5752" name="Cataphracts" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="b8ef-0831-51ed-a667" name="Archers" defaultCostLimit="-1.0" hidden="true"/>
     <costType id="9ab4-992c-45ac-8ae0" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
     <costType id="f15d-2e57-5cce-8494" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>

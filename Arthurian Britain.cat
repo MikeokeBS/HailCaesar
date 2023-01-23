@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d2e9-c9a9-6204-6e76" name="Arthurian Britain" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d2e9-c9a9-6204-6e76" name="Arthurian Britain" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="10b0-994a-a5fa-dd17" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="6789-3135-a75f-df3f" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="10b0-994a-a5fa-dd17" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="6789-3135-a75f-df3f" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="abbc-73a3-86b7-7213" name="Unit Stats"/>

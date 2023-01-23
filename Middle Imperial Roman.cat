@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="6" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="de76-9644-2fb4-5752" name="Legion" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="b8ef-0831-51ed-a667" name="Artillery" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="2674-ced4-78f6-4eea" name="Artillery (L)" defaultCostLimit="0.0" hidden="false"/>
-    <costType id="2017-f20f-bd2b-97c7" name="Artillery (M)" defaultCostLimit="0.0" hidden="false"/>
-    <costType id="ba03-9173-45e5-7506" name="Artillery (H)" defaultCostLimit="0.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="de76-9644-2fb4-5752" name="Legion" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="b8ef-0831-51ed-a667" name="Artillery" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="2674-ced4-78f6-4eea" name="Artillery (L)" defaultCostLimit="0.0" hidden="true"/>
+    <costType id="2017-f20f-bd2b-97c7" name="Artillery (M)" defaultCostLimit="0.0" hidden="true"/>
+    <costType id="ba03-9173-45e5-7506" name="Artillery (H)" defaultCostLimit="0.0" hidden="true"/>
     <costType id="b0c2-4fb3-b95e-4066" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
     <costType id="5fd2-fbc9-dc09-18de" name="Pila" defaultCostLimit="-1.0" hidden="true"/>
     <costType id="7954-b3bd-e1f2-c185" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
