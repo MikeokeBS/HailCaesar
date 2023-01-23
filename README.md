@@ -1,4 +1,4 @@
-Template Data Repo
+Hail Caesar Battlescribe Repository
 ==================
 
 [![Latest release](https://img.shields.io/github/release/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases/latest)
@@ -11,15 +11,13 @@ Template Data Repo
 
 ## Overview ##
 
-__What's this?__
+This is a work in progress Army Roster builder for Hail Caesar, using the Battlescribe platform.
+All written armies should have exceptions to inform you if your army does not meet the requirements according to the army books.
+Exceptions to the above:
+Palmyrans - I cannot find a way to force you to have every third detachment as Freshly Raised.  You can add this in using the upgrade function of each unit.
+Middle Imperial Roman - Battlescribe won't force you to have 3 Legion units for each Artillery piece, or limit the number of Heavy Artillery as a % of Light or Medium
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [our homepage][BSData.net]
-
-__Okay, nice project. Is it actually working?__ _I just want those files..._
-
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+Please do not use the "Hail Caesar" detachment, use the one named for your army.  The HC detachment is minimal and has no restrictions.
 
 __I found a bug!__ / *I have another request*
 
