@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d2e9-c9a9-6204-6e76" name="Arthurian Britain" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d2e9-c9a9-6204-6e76" name="Arthurian Britain" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
@@ -31,8 +31,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65d-7e2b-19bc-3105" type="max"/>
           </constraints>
         </categoryLink>
-	<categoryLink id="8a45-ac39-edd0-b4ab" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
-      
+        <categoryLink id="8a45-ac39-edd0-b4ab" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
         <categoryLink id="fed5-f1cd-9926-c3e5" name="Cavalry" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="false">
           <constraints>
             <constraint field="3800-df83-f0d8-bd42" scope="roster" value="10.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="b9f7-12cb-6625-3b4f" type="min"/>
@@ -48,7 +47,7 @@
             <constraint field="3800-df83-f0d8-bd42" scope="primary-category" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="9c09-6471-24c5-5aa2" type="min"/>
           </constraints>
         </categoryLink>
-       </categoryLinks>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>

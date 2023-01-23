@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3d5-580a-cc64-af21" name="Hail Caeser Core Rulebook"/>
     <publication id="8269-29c8-ecfa-1b1d" name="Army Lists: Biblical &amp; Classical"/>

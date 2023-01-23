@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="babd-6c2e-13f2-765b" name="Middle Imperial Roman" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
@@ -188,6 +188,8 @@
         <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
         <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
         <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7804-25c1-c816-b3cf" name="Legion 50%+ of infantry" hidden="false" collective="false" import="true" type="upgrade">

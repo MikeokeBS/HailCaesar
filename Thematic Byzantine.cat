@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8df2-25f9-827a-fd03" name="Thematic Byzantine" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8df2-25f9-827a-fd03" name="Thematic Byzantine" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <costTypes>
     <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
@@ -45,13 +45,6 @@
             <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd5e-5efc-c97c-95ac" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="d343-faf6-6d6e-03c6" name="Kavallaroi" hidden="false" targetId="c0f3-3d9a-da60-aa84" primary="false">
-          <constraints>
-            <constraint field="acc1-bd8d-e6da-a8bc" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="dd27-7e4e-47f0-fbaf" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="bc54-8f68-8a6a-66bc" name="Rus" hidden="false" targetId="18e2-2483-5690-144d" primary="false"/>
-        <categoryLink id="6fb1-fcdc-acd7-a12b" name="Slav" hidden="false" targetId="28b4-072d-ccf0-7fad" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -85,6 +78,7 @@
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8133-e8c1-0b83-9dbf" name="Commander" hidden="false" collective="false" import="true" type="model">
@@ -112,6 +106,7 @@
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7efc-42b4-c151-ef3f" name="Kontaratoi Javelins" hidden="false" collective="false" import="true" type="unit">
@@ -131,8 +126,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="5be8-08ca-b145-5156" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="8a2a-1044-8e96-ba14" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="5b3d-9519-61fd-a88a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8b11-bfac-7ac8-49ab" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -144,6 +137,7 @@
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f0c9-9f68-a7b4-6823" name="Kontaratoi Javelins (Elite)" hidden="false" collective="false" import="true" type="unit">
@@ -164,8 +158,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="2d69-e6c5-209c-303e" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="b5c1-3990-5318-57f4" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="35b5-67cf-7ca9-cb27" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d867-36c3-ac70-64ad" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -177,6 +169,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="174b-8691-da34-45ba" name="Kontaratoi Javelins (Elite, Extra Armour)" hidden="false" collective="false" import="true" type="unit">
@@ -198,8 +191,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="4f39-b4b1-a587-8915" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="1445-17d1-4e2d-348f" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="29b6-b202-dd93-4248" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1ef1-01ab-19e0-58c3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -211,6 +202,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7102-8c5d-237a-c26b" name="Kontaratoi &amp; Bows" hidden="false" collective="false" import="true" type="unit">
@@ -230,8 +222,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6620-d32a-7e5a-fe7f" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="f440-c938-c4b6-0fb7" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="91d8-77b8-b1a8-d20b" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5eec-2dee-1e46-dbc8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -243,6 +233,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="223d-b533-791b-f0fe" name="Kontaratoi Bows (Elite)" hidden="false" collective="false" import="true" type="unit">
@@ -263,8 +254,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="cec7-6f4a-19c4-29b1" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="cbbd-a5d3-65a0-aa14" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="4a83-7d15-b1ba-f689" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="29cb-ba67-034d-f2fe" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -276,6 +265,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5905-22b8-6d08-3cd9" name="Kontaratoi Bows (Elite, Extra Armour)" hidden="false" collective="false" import="true" type="unit">
@@ -297,8 +287,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6093-2021-83fd-a5ee" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="69f6-b72f-dd34-672f" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="e7aa-6547-7f28-7589" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af1a-cb7e-8618-d89e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -310,6 +298,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff29-2260-c45c-d5da" name="Rus Varangians Assorted" hidden="false" collective="false" import="true" type="unit">
@@ -329,9 +318,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="2670-c647-66c4-7787" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="3a3d-e9f2-cfce-bc75" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="7f4b-c352-3e06-22ae" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="975d-0333-7507-8649" name="Rus" hidden="false" targetId="18e2-2483-5690-144d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6c7b-4362-af8a-bcf9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -343,6 +329,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d75f-7a8d-efee-4a96" name="Rus Varangians Double Handed Axe" hidden="false" collective="false" import="true" type="unit">
@@ -362,9 +349,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="0aac-7a58-eea6-4bce" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="7639-4c61-3227-e2cf" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="8bde-f510-7268-a65e" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="4384-8add-94fe-4987" name="Rus" hidden="false" targetId="18e2-2483-5690-144d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8f4f-be90-9707-e167" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -376,6 +360,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cecb-6639-ce3f-8a9d" name="Slavic Spears/Javelins" hidden="false" collective="false" import="true" type="unit">
@@ -395,9 +380,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="53e6-4103-790d-6e49" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="e977-ccd8-f86c-7e91" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="b118-a228-c6da-8e2e" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="1d53-3e45-0597-01c7" name="Slav" hidden="false" targetId="28b4-072d-ccf0-7fad" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0911-74c1-6d7e-2daa" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -409,6 +391,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1341-99e4-3fd2-2a79" name="Slavic Double Handed Axe" hidden="false" collective="false" import="true" type="unit">
@@ -428,9 +411,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="4282-de61-facd-3911" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="b058-0a37-17e3-0110" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="ade2-1918-96c8-2ae1" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="ed82-0f5e-30f7-d95a" name="Slav" hidden="false" targetId="28b4-072d-ccf0-7fad" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a141-f656-e26f-e5f9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -442,6 +422,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="72fd-e383-3f31-afe6" name="Slavic Archers" hidden="false" collective="false" import="true" type="unit">
@@ -461,9 +442,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6e47-7ec2-a476-538d" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="2968-cc89-0b85-dda1" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="c092-98d7-e5d9-cfa2" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="2afa-0404-5ed4-1ed4" name="Slav" hidden="false" targetId="28b4-072d-ccf0-7fad" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f606-248d-e9f1-30a9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -475,6 +453,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80a7-d56f-6610-60e7" name="Slavic Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -494,9 +473,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="291a-5f96-e762-e738" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="f7cc-78ab-13f3-a5ab" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="5dd5-5aaf-b1aa-2de1" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="5146-2407-f186-8c6a" name="Slav" hidden="false" targetId="28b4-072d-ccf0-7fad" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7da8-169f-a304-07d6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -508,6 +484,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9606-79a4-c11e-34d3" name="Psiloi Skirmishers Javelins (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -527,7 +504,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6ce3-c656-0849-48b8" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="18e8-2258-2ac8-5041" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8a8c-55a3-cacb-935e" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -539,6 +515,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a5a-909e-70a2-73af" name="Skirmishers Slings/Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -558,7 +535,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6173-8ce3-f2f3-1ccd" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
-        <categoryLink id="c1ab-f5a2-4b4c-d6ce" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
         <categoryLink id="8a58-1adb-96da-f80d" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -571,6 +547,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3c0-a3d1-31c8-322d" name="Solenarion Skirmishers Slings/Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -593,7 +570,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="9d4b-b92d-a1dc-6d52" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
-        <categoryLink id="a2ac-7650-0960-6983" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
         <categoryLink id="82c2-8fb5-9c11-7be8" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -606,6 +582,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2308-6b5a-fc1f-8a66" name="Skirmishers Staffslings (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -628,7 +605,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="756d-4f34-cb24-2215" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
-        <categoryLink id="d02a-7903-1fbd-93cb" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
         <categoryLink id="8ed8-f4eb-80ab-c9ff" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -641,6 +617,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d780-c028-a9c2-38a5" name="Infantry with fire-siphons (Tiny)" hidden="false" collective="false" import="true" type="unit">
@@ -663,8 +640,6 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="fd07-dfbb-ce03-b616" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="8061-9bde-38a5-06cf" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="66e8-5275-e80d-4c1d" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="744f-8a2f-d354-b80a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -676,6 +651,7 @@ Stubborn - Re-roll one failed morale save if save is 6+</characteristic>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87c7-d3ef-454d-86ff" name="Kavallaroi (Tagmata Cataphracts) (Brave)" hidden="false" collective="false" import="true" type="unit">
@@ -700,8 +676,6 @@ Brave - Shaken units rally on D6 roll of 4+ at end of command phase if more than
       </profiles>
       <categoryLinks>
         <categoryLink id="f5a0-fc9f-017a-4225" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="5856-1627-2bf2-5c11" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="9629-4b88-39fb-2b9d" name="Kavallaroi" hidden="false" targetId="c0f3-3d9a-da60-aa84" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b507-b4ec-6d9e-9bde" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -713,6 +687,7 @@ Brave - Shaken units rally on D6 roll of 4+ at end of command phase if more than
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7075-5089-6dbf-f2e2" name="Kavallaroi (Tagmata Cataphracts)" hidden="false" collective="false" import="true" type="unit">
@@ -733,8 +708,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="6456-bb0a-6a3a-e31d" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="1c9f-0f9d-8c81-ba06" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="9480-165a-40dc-fbbb" name="Kavallaroi" hidden="false" targetId="c0f3-3d9a-da60-aa84" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af87-5353-791d-92b9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -746,6 +719,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e23d-032f-7077-f3d9" name="Kavallaroi" hidden="false" collective="false" import="true" type="unit">
@@ -765,8 +739,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="24e0-13b6-659d-2d37" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="f798-8a0d-a78e-af19" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="93cf-cfb5-6306-d873" name="Kavallaroi" hidden="false" targetId="c0f3-3d9a-da60-aa84" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7390-262f-a991-3a7a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -778,6 +750,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ead-2609-6391-5cb2" name="Trapezitoi Javelins (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -797,7 +770,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="031d-a2fb-80cb-7c6c" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="d3a1-391b-d05f-b03f" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9e6a-c578-afa5-ffac" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -809,6 +781,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="103a-df63-acb4-bd15" name="Trapezitoi Javelins &amp; Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -828,7 +801,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="e584-62a9-25a7-30d8" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="0ddc-3538-42db-a74b" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b202-95a4-936c-d6d6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -840,6 +812,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9ebc-9951-87da-89da" name="Mercenary Cav Bows &amp; Javelins (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -859,7 +832,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="f32d-c167-fb56-6407" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="6ce6-07d3-999d-2d7e" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b20b-f7b2-3f5f-66ff" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -871,6 +843,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29c8-6c12-b35c-fe08" name="Mercenary Horse Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -890,7 +863,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="5bbf-78bf-6ce2-0ceb" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="55b5-598a-85b1-03c2" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2f1e-6521-8803-266d" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -902,6 +874,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="79aa-a8be-9cdc-860f" name="Georgian Heavy Cavalry Lances" hidden="false" collective="false" import="true" type="unit">
@@ -921,7 +894,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="9704-31ed-8d26-cbae" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="4939-eafa-b65b-7d7a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8080-6710-2dbb-c2cb" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -933,6 +905,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d347-2960-cc71-04bf" name="Georgian Heavy Cavalry Lances &amp; Bows" hidden="false" collective="false" import="true" type="unit">
@@ -952,7 +925,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="32fc-191a-e285-0d23" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="ea81-cc09-7679-8143" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="aef5-893d-794e-a882" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -964,6 +936,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b2b0-0c71-ec96-2aa7" name="Light Artillery bolt thrower" hidden="false" collective="false" import="true" type="unit">
@@ -986,7 +959,6 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
       </profiles>
       <categoryLinks>
         <categoryLink id="c168-e805-b24b-4e44" name="New CategoryLink" hidden="false" targetId="1a5d-a74e-c10a-086e" primary="true"/>
-        <categoryLink id="6cf1-0f56-5a56-cb58" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="275a-dd2a-7ad8-3805" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -998,6 +970,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="1.0"/>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="284a-a0f0-1a21-2746" name="Infantry 25%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1016,6 +989,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ddb-9603-2148-df81" name="Cavalry 25%+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1034,6 +1008,7 @@ Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3460-3210-7e68-7305" name="Kavallaroi 50%+ of cavalry" hidden="false" collective="false" import="true" type="upgrade">
@@ -1053,6 +1028,7 @@ upgraded to Tagmata (household troops).</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0365-2065-838c-29e0" name="Rus *or* Slav allies" hidden="false" collective="false" import="true" type="upgrade">
@@ -1073,6 +1049,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2dc6-2373-7978-be3f" name="Artillery – up to 3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1091,6 +1068,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3703-83b1-e11b-fa73" name="Divisions 4+ units." hidden="false" collective="false" import="true" type="upgrade">
@@ -1109,6 +1087,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="869b-5e7a-a9a2-2d71" name="Skirmishers per division 50% of infantry." hidden="false" collective="false" import="true" type="upgrade">
@@ -1127,6 +1106,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1022-0374-3bef-f252" name="Rus Archers" hidden="false" collective="false" import="true" type="unit">
@@ -1146,9 +1126,6 @@ or other, but not both.</description>
       </profiles>
       <categoryLinks>
         <categoryLink id="9adc-3f32-a43b-d218" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="ebfc-4304-efc5-8322" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="d9aa-9aa9-3656-757a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="6f53-606d-2399-42ee" name="Rus" hidden="false" targetId="18e2-2483-5690-144d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="308b-af5d-9ecc-bc12" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1160,6 +1137,7 @@ or other, but not both.</description>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2192-074b-d796-5ae8" name="Rus Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
@@ -1179,9 +1157,6 @@ or other, but not both.</description>
       </profiles>
       <categoryLinks>
         <categoryLink id="cd46-ceb7-c9dc-44b9" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
-        <categoryLink id="46b4-6b35-892e-dd02" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
-        <categoryLink id="3d19-1dc0-8302-5c04" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
-        <categoryLink id="f314-dcc8-4aaf-a9e8" name="Rus" hidden="false" targetId="18e2-2483-5690-144d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="34b4-066a-09ba-4133" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1193,6 +1168,7 @@ or other, but not both.</description>
         <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="400c-b95a-f321-9b98" name="Armenian Heavy Cavalry Lances" hidden="false" collective="false" import="true" type="unit">
@@ -1212,7 +1188,6 @@ or other, but not both.</description>
       </profiles>
       <categoryLinks>
         <categoryLink id="a298-0e80-e8c8-09cd" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="7d6e-57b5-9e17-a0e2" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="587a-ad0b-81f9-05e9" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1224,6 +1199,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="332c-27d1-63ba-8efd" name="Armenian Heavy Cavalry Lances &amp; Bows" hidden="false" collective="false" import="true" type="unit">
@@ -1243,7 +1219,6 @@ or other, but not both.</description>
       </profiles>
       <categoryLinks>
         <categoryLink id="0720-6b47-1843-b9ad" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
-        <categoryLink id="a75a-c8d0-d9e3-88f6" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4199-272e-c37f-f338" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
@@ -1255,6 +1230,7 @@ or other, but not both.</description>
         <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
         <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
         <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1274,6 +1250,7 @@ or other, but not both.</description>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
@@ -1289,6 +1266,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
@@ -1304,6 +1282,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
@@ -1319,6 +1298,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
@@ -1334,6 +1314,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
@@ -1349,6 +1330,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
@@ -1364,6 +1346,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
@@ -1379,6 +1362,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
@@ -1394,6 +1378,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
@@ -1409,6 +1394,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
@@ -1424,6 +1410,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1439,6 +1426,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
@@ -1454,6 +1442,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1469,6 +1458,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
@@ -1484,6 +1474,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1499,6 +1490,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -1514,6 +1506,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1529,6 +1522,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
@@ -1544,6 +1538,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
@@ -1559,6 +1554,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
@@ -1574,6 +1570,7 @@ or other, but not both.</description>
             <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
             <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
             <cost name="Artillery" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
