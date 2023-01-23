@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d365-8bdf-1b03-c2fa" name="Vikings" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <costTypes>
+    <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="b30c-166c-09f3-f637" name="Hirdman" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="7fd0-3ffe-693c-ac7a" name="Light Infantry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="277e-6c13-4a77-ca03" name="Bondi" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="9576-6cec-ee25-95c3" name="Mercenary" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="4eb2-89f6-6482-4edb" name="Hird/Bondi" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="cdf0-58dc-15e2-4db6" name="Infantry Core" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="d159-604a-8c6a-30de" name="Huscarl" defaultCostLimit="-1.0" hidden="true"/>
+  </costTypes>
+  <profileTypes>
+    <profileType id="abbc-73a3-86b7-7213" name="Unit Stats"/>
+  </profileTypes>
+  <forceEntries>
+    <forceEntry id="e89f-87c1-cb55-6bd1" name="Vikings Detachment" hidden="false">
+      <constraints>
+        <constraint field="cdf0-58dc-15e2-4db6" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bdd1-a8c9-9523-0c5e" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9757-6f8c-3e5b-05cb" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
+        <categoryLink id="1f4e-33ac-84d4-0577" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fc1-bc14-9957-5601" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8371-370a-966d-bc5f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="702e-4270-3cb2-e6a9" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fc6-ede7-f738-506f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="aba3-1831-8354-d84c" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+        <categoryLink id="bc8f-a83c-5520-b2cb" name="Skirmisher" hidden="false" targetId="2418-461b-1947-a0f1" primary="false">
+          <constraints>
+            <constraint field="0dc0-9d58-7884-5916" scope="force" value="25.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="c54d-2b3d-eff7-48be" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="223b-2218-c8da-8020" name="Hirdmen" hidden="false" targetId="9ad8-46d1-a8df-a6c6" primary="false">
+          <constraints>
+            <constraint field="cdf0-58dc-15e2-4db6" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="3a80-24b0-6234-d5eb" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d27e-2b9c-0f7d-12fd" name="Bondi" hidden="false" targetId="46ad-5926-0580-3d65" primary="false"/>
+        <categoryLink id="b009-2f0f-ba54-cb48" name="Light Infantry" hidden="false" targetId="77bb-d401-10b4-9a90" primary="false">
+          <constraints>
+            <constraint field="cdf0-58dc-15e2-4db6" scope="roster" value="20.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="80b4-ee4e-c9a2-42b7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9a6f-3837-5170-8470" name="Mixed Hird/Bondi" hidden="false" targetId="c75e-ccc8-9689-cd93" primary="false"/>
+        <categoryLink id="37d3-5c7f-dbef-349a" name="Mercenary" hidden="false" targetId="f410-f604-811a-f40b" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88cd-6b6a-99d7-5a5d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d80e-4152-0335-2faa" name="Huscarl" hidden="false" targetId="6990-0eab-3a05-2c90" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc5-f541-9f58-775c" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="80ca-cb68-996f-65dd" name="Huscarls Hvy Inf" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a46-0fd0-e27e-37cc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="de23-320c-5cac-67c8" name="Heavy Infantry Huscarls" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Stubborn - Re-roll one failed morale save if save is 6
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Tough Fighters - Re-roll one missed hand-to-hand combat attack
+Valiant - Break test re-roll once per battle</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4002-1d3a-7bfb-91ee" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="a054-a817-8e04-26e7" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="14a5-b540-891d-6e38" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="dbaa-827c-eb0c-ad9f" name="Huscarl" hidden="false" targetId="6990-0eab-3a05-2c90" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bae9-c4c6-1a1a-6c56" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="36.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1980-2c11-6ed2-ff3f" name="Commander" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7b22-e1df-b218-c8ef" name="Commander" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Commander</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b1a7-08c1-e124-1c40" name="New CategoryLink" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7be7-6ce5-f1eb-3aa2" name="General" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fd56-fcf5-bd0f-e42f" name="General" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">4</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">General</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e699-6f4b-5419-ada1" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="true"/>
+        <categoryLink id="6128-c2d2-ce10-dfe3" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false"/>
+        <categoryLink id="70f1-410e-ce54-e99c" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59cd-4dc9-a92c-ccfd" name="Huscarls Hvy Inf (Pila)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d865-7760-b738-a6b2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5c89-4ab1-203d-3281" name="Heavy Infantry Huscarls with Pila" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Stubborn - Re-roll one failed morale save if save is 6
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Tough Fighters - Re-roll one missed hand-to-hand combat attack
+Valiant - Break test re-roll once per battle</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8fb2-c4ff-3a90-35ff" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="9082-4ab8-6004-f8ae" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="739c-04fc-e179-025f" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="b3c4-66d0-9357-3d05" name="Huscarl" hidden="false" targetId="6990-0eab-3a05-2c90" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="392c-0dbf-aede-beb6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="39.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d396-21d4-61e3-6737" name="Huscarls Hvy Inf (Berserkers)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="441b-c335-3c49-5a38" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="298c-a95a-ae7d-9887" name="Heavy Infantry Huscarls with Berserkers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Stubborn - Re-roll one failed morale save if save is 6
+Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Tough Fighters - Re-roll one missed hand-to-hand combat attack
+Valiant - Break test re-roll once per battle
+Wild Fighters - Re-roll up to three missed hand-to-hand combat attacks in their first round of combat</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c1c3-ab0f-fac0-ffd1" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="6127-48ab-b933-1b77" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="f1be-d838-83d1-69b4" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+        <categoryLink id="a589-7c27-6833-c7d1" name="Huscarl" hidden="false" targetId="6990-0eab-3a05-2c90" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="238a-fa4a-50d5-9da6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="39.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9da4-3c39-e07c-8b04" name="Mercenary Hvy Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d946-60f8-024e-26ac" name="Heavy Infantry Mercenary Vikings" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Stubborn - Re-roll one failed morale save if save is 6
+Tough Fighters - Re-roll one missed hand-to-hand combat attack
+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="794b-135b-7080-7c3c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="f110-552a-5404-5921" name="Mercenary" hidden="false" targetId="f410-f604-811a-f40b" primary="false"/>
+        <categoryLink id="b16a-96b0-c83e-f881" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="89be-bb89-2c67-242d" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="30.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="acb9-0734-71f5-cb01" name="Mercenary Hvy Inf (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9809-373e-108f-1fb3" name="Heavy Infantry Mercenary Vikings (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">5</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Stubborn - Re-roll one failed morale save if save is 6
+Tough Fighters - Re-roll one missed hand-to-hand combat attack
+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="caff-62ae-f1f8-6906" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="cd67-71c2-4d67-0974" name="Mercenary" hidden="false" targetId="f410-f604-811a-f40b" primary="false"/>
+        <categoryLink id="e131-4742-8036-d411" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4940-ea85-f09a-b887" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="64d4-27b4-401c-7568" name="Hirdmen Hvy Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="46d1-1b4f-21b0-57d1" name="Heavy Infantry Hirdmen" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-
+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cca5-1950-91f9-e9d1" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="5703-0667-0afa-76e9" name="Hirdmen" hidden="false" targetId="9ad8-46d1-a8df-a6c6" primary="false"/>
+        <categoryLink id="133a-91d2-0ba7-5f47" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="f218-08f6-7656-721c" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="211d-be10-2d8e-c6ce" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="26.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="1.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a206-ca39-80a8-1857" name="Hirdmen Hvy Inf (Pila)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c5ca-df4c-8ece-4259" name="Heavy Infantry Hirdmen with Pila" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-
+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5cf4-8782-9aff-dd04" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="eada-2783-3fbf-7910" name="Hirdmen" hidden="false" targetId="9ad8-46d1-a8df-a6c6" primary="false"/>
+        <categoryLink id="7064-c259-dcba-dd36" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="ab31-7946-9667-4d9c" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="65fe-0c5f-db72-e896" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="29.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="1.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4eb3-b7bc-1518-6ab1" name="Bondi Med Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f476-ac42-8a21-1ee4" name="Medium Infantry Bondi" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a404-fbd3-5f88-a070" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="56a2-6029-57a0-0ead" name="Bondi" hidden="false" targetId="46ad-5926-0580-3d65" primary="false"/>
+        <categoryLink id="021e-a32d-467c-ecdd" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="2fa3-7db5-5dd1-3c56" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f143-8a2c-183e-e25c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe78-861e-c458-8468" name="Hirdmen Hvy Inf (Berzerkers)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="429f-b135-8b7c-2139" name="Heavy Infantry Hirdmen with Berserkers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Wild Fighters - Re-roll up to three missed hand-to-hand combat attacks in their first round of combat
+</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e5a6-1a97-7fdb-8c6c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="6a25-7912-12aa-62bb" name="Hirdmen" hidden="false" targetId="9ad8-46d1-a8df-a6c6" primary="false"/>
+        <categoryLink id="9777-10e1-fe37-2535" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="f7d6-5265-0dc4-8894" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cf56-3589-99e0-34b2" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="29.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="1.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a653-aabb-5223-25f6" name="Hirdmen Hvy Inf (Tough)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f73e-f366-c5b2-3b1c" name="Heavy Infantry Hirdmen, Tough" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8f0b-77ea-6fed-b0bd" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="d0a4-7f51-a005-2a9b" name="Hirdmen" hidden="false" targetId="9ad8-46d1-a8df-a6c6" primary="false"/>
+        <categoryLink id="c6ab-94be-5088-f1bb" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="7c6e-78c0-222d-626a" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="615f-25fb-59f0-3281" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="27.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="1.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a254-e5e3-b997-95d5" name="Bondi Med Inf (Pila)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b4c0-001f-ae07-1e6f" name="Medium Infantry Bondi" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4139-f621-6da7-7681" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="e31b-92e9-c6a0-dfe6" name="Bondi" hidden="false" targetId="46ad-5926-0580-3d65" primary="false"/>
+        <categoryLink id="e36c-d6d0-cdc7-3b0a" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="0950-ec1f-0409-b136" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e8d2-ef11-6d80-7cc3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="26.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2738-1dc6-ecc2-e919" name="Bondi Lt Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d493-3cc8-c49e-3c7f" name="Light Infantry Bondi with Bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">4</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6ed3-c954-4d15-ddc0" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="f6f3-e216-f746-f22b" name="Light Infantry" hidden="false" targetId="77bb-d401-10b4-9a90" primary="false"/>
+        <categoryLink id="39f4-ade6-fa34-74e0" name="Bondi" hidden="false" targetId="46ad-5926-0580-3d65" primary="false"/>
+        <categoryLink id="54ab-09b9-0496-3161" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="b966-5087-64e5-b173" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a5c8-3c7d-bf16-00f3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="21.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3c39-6a6f-6b97-8fc4" name="Bondi Lt Inf (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f3ed-0978-da4d-bac0" name="Light Infantry Bondi with Bows (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="19e2-5d5c-e19e-dbdb" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="b5db-d32a-d357-2920" name="Bondi" hidden="false" targetId="46ad-5926-0580-3d65" primary="false"/>
+        <categoryLink id="c0f0-7365-f501-ab94" name="Light Infantry" hidden="false" targetId="77bb-d401-10b4-9a90" primary="false"/>
+        <categoryLink id="c195-c41a-fc29-dad2" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+        <categoryLink id="3749-1b5a-0696-75f3" name="Infantry (Core)" hidden="false" targetId="2267-c9b4-57f7-0f1f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="34d4-2553-c8e3-8787" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="15.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="1.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0902-4d08-c5ac-ee9f" name="Thrall Skirmishers (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="72ec-f023-a969-5844" name="Thrall Skirmishers with Spears and Javelins (Small)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c8c7-8f81-3fb1-4b72" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="e832-9565-29d7-01e5" name="Unit" hidden="false" targetId="5b0e-9b5b-1c07-2ba4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="47bd-0a5d-7e78-15a3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="11.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c276-1f62-4eee-cb16" name="Hirdmen 50%+ of infantry" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="42b9-682b-68ef-84d7" name="Hirdmen 50%+ of infantry" hidden="false">
+          <description>At least half of the non-skirmisher units in the army must be Hirdmen or mixed Hird/Bondi units 
+(see notes).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6e4b-c796-1349-ae06" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f92-6994-873e-bd8b" name="Light infantry up to 20%" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5bfa-804d-3ed2-29c6" name="Light infantry up to 20%" hidden="false">
+          <description>Up to one in five of the non-skirmisher units in the army can be light infantry.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2687-0f81-7061-36be" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4338-c2ff-a865-7f84" name="Divisions 4 units+ unless mercenary Vikings" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="d3f0-5205-7a05-9929" name="Divisions 4 units+ unless mercenary Vikings" hidden="false">
+          <description>Except for Mercenary Vikings, divisions must contain at least 4 units, excluding skirmishers. 
+A Mercenary Viking unit must form a division on its own led by a commander integral to the unit; this
+division does not count for purposes of establishing defeat. All divisions must be led by a commander</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="acb6-4d63-91bf-1632" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="647c-d755-c390-3964" name="Skirmishers per division 25% of infantry" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="12fe-9887-4629-6897" name="Skirmishers per division 25% of infantry" hidden="false">
+          <description> Divisions may contain up to a quarter as many skirmisher units as they contain non-skirmisher infantry.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7613-b855-d8cf-0ead" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="9f7e-82b5-18ac-0efd" name="General" publicationId="6649-55bc-f47a-0631" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b237-2663-6a34-b7b0" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ff53-af7e-0bb1-ea3d" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5d1-cbee-9ace-e656" name="British Medium Infantry wih Spears &amp; Shields" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="e82b-a317-663b-bcd8" name="British Medium Infantry wih Spears &amp; Shields" publicationId="6649-55bc-f47a-0631" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a898-517a-35c1-ce64" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+        <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+        <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+        <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+        <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+        <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+        <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8812-b2ce-6870-fc67" name="Upgrade" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6968-04fd-6d0c-bdfc" name="Levy" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c85c-e742-c785-0764" name="Levy" hidden="false">
+              <description>Must roll 4+ on a D6 to recover disorder at end of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bb93-e43d-0b58-34d2" name="Brave" hidden="false">
+              <description>Shaken units rally on D6 roll of 4+ at end of command phase if more than 12&quot; from enemy</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="cba4-a709-50c7-aa60" name="Drilled" hidden="false">
+              <description>Free move on failed order. Units may move through other drilled units without risk of disorder</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1668-69bf-4aca-48c1" name="Elite" hidden="false">
+              <description>Recover from disorder on D6 roll of 4+ at start of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b7c5-8e76-96e0-c1e3" name="Fanatic" hidden="false">
+              <description>Morale Save +1 until shaken</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="71b7-bda7-c28b-e12a" name="Feigned Flight" hidden="false">
+              <description>The unit is allowed to move out of a combat engagement</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4d6a-292b-b8a1-105d" name="Frenzied Charge" hidden="false">
+              <description>Must charge if within range, with three moves allowed on any successful order/initiative</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dd5d-4e0d-178a-ee30" name="Freshly Raised" hidden="false">
+              <description>Check unit in first round of combat as per the Hail Caesar rulebook</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="21cb-796e-a9af-a9a5" name="Marauders" hidden="false">
+              <description>Ignore distance penalty for command</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ab90-a396-6e62-a237" name="Marksmen" hidden="false">
+              <description>Re-roll one missed ranged attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3176-096d-8d6a-350d" name="Militia" hidden="false">
+              <description>No move on roll equal to commander’s leadership when given orders</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8140-babb-4c43-04ee" name="Parthian Shot" hidden="false">
+              <description>Can evade and make closing shots as a reaction to an enemy charge</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3940-4378-9de1-58db" name="Steady" hidden="false">
+              <description>Ignore the first ‘6’ rolled for break tests from ranged attacks each turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="65dd-4792-026b-1feb" name="Stubborn 6+" hidden="false">
+              <description>Re-roll one failed morale save if save is 6</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f49b-44c6-278c-4223" name="Phalanx" hidden="false">
+              <description>Lost combats up to two count as draws until the unit is shaken </description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ca16-13d7-3be8-4258" name="Stubborn 5+" hidden="false">
+              <description>Re-roll one failed morale save if save is 5</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="2.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9ee3-74a7-9a76-b1e5" name="Wild Fighters" hidden="false">
+              <description>Re-roll up to three missed hand-to-hand combat attacks in their first round of combat</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="de71-298b-e935-1454" name="Stubborn 3+" hidden="false">
+              <description>Re-roll one failed morale save if save is 3</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="4.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4110-5123-40a6-9cc7" name="Valiant" hidden="false">
+              <description>Break test re-roll once per battle</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fa8f-e961-a11b-7291" name="Tough Fighters" hidden="false">
+              <description>Re-roll one missed hand-to-hand combat attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3fe1-1048-d162-532e" name="Stubborn 4+" hidden="false">
+              <description>Re-roll one failed morale save if save is 4</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Hirdman" typeId="b30c-166c-09f3-f637" value="0.0"/>
+            <cost name="Light Infantry" typeId="7fd0-3ffe-693c-ac7a" value="0.0"/>
+            <cost name="Bondi" typeId="277e-6c13-4a77-ca03" value="0.0"/>
+            <cost name="Mercenary" typeId="9576-6cec-ee25-95c3" value="0.0"/>
+            <cost name="Hird/Bondi" typeId="4eb2-89f6-6482-4edb" value="0.0"/>
+            <cost name="Infantry Core" typeId="cdf0-58dc-15e2-4db6" value="0.0"/>
+            <cost name="Huscarl" typeId="d159-604a-8c6a-30de" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
