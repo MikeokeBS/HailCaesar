@@ -1,0 +1,1627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0630-3b40-7055-3383" name="Sassanid Persian" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <costTypes>
+    <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="de76-9644-2fb4-5752" name="Legion" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="b0c2-4fb3-b95e-4066" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="7954-b3bd-e1f2-c185" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="e4dd-e575-0a8f-862f" name="Cataphract" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="e04d-df89-0bb1-1f4a" name="Elephant" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="57ae-dd7e-5e8a-4e68" name="Heavy Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="881f-470a-19b3-96e3" name="Cataphract Elite" defaultCostLimit="-1.0" hidden="true"/>
+  </costTypes>
+  <forceEntries>
+    <forceEntry id="c5b5-f15f-44de-2eca" name="Sassanid Persian Detachment" hidden="false">
+      <constraints>
+        <constraint field="7954-b3bd-e1f2-c185" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b64-cbd2-9e1e-5452" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6806-8cb1-4aa6-aefb" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
+        <categoryLink id="b76e-05b7-c412-e3fd" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b594-c507-2502-cf57" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5e5-b850-dd6d-2a51" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f12e-e6c8-82f7-87ce" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af81-7792-8b68-8d84" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="18a8-215d-1e1a-9c04" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+        <categoryLink id="1314-7da5-a83a-be11" name="Cavalry" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="9faf-2a2d-e5d8-287b" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4ec2-a4dd-884e-198d" name="Skirmisher" hidden="false" targetId="2418-461b-1947-a0f1" primary="false">
+          <constraints>
+            <constraint field="0dc0-9d58-7884-5916" scope="force" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="5fac-41a1-4c24-a77c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ed86-dee9-78ab-0ffa" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false">
+          <constraints>
+            <constraint field="acc1-bd8d-e6da-a8bc" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="d5c9-ad0e-06e3-b2a6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="68d2-173c-c075-d311" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="05a2-2088-577b-174d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0727-1e42-6d81-eeea" name="Heavy Infantry" hidden="false" targetId="1850-fe5a-d411-015d" primary="false">
+          <constraints>
+            <constraint field="0dc0-9d58-7884-5916" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="36a3-b097-9cef-82c6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b101-0588-7fde-f588" name="Elephant" hidden="false" targetId="66a6-4acc-9304-76ea" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="10.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="ef2b-bc86-a582-be87" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="e712-1280-b702-1a25" name="General" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aee-5e8a-5b93-15d1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="74ef-e541-0026-d6cb" name="General Ld8" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">General</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2eb7-babe-60a5-2ac1" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="true"/>
+        <categoryLink id="df75-b721-4fef-3304" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="284a-a0f0-1a21-2746" name="Infantry up to 50%" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7f29-0fb7-1173-5eec" name="Infantry up to 50%" hidden="false">
+          <description>Up to half of the units in the army must be infantry other than skirmishers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="adfa-3563-d63f-dc81" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ddb-9603-2148-df81" name="Cavalry 50%+" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="1c36-6340-8ef0-676f" name="Cavalry 50%+" hidden="false">
+          <description>At least half of the units in the army must be cavalry.	</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a0af-6c53-46de-991d" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3703-83b1-e11b-fa73" name="Divisions 4+ units." hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a00f-3459-a1fe-e79b" name="Divisions 4+ units." hidden="false">
+          <description>Divisions must contain at least four units excluding skirmishers and must be led by a commander.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="45c9-eab9-6eda-759b" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1920-a9cc-b88e-56bc" name="Elephants up to 10%" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2f9b-5e2c-33f7-93b3" name="Elephants up to 10%" hidden="false">
+          <description>Up to one in ten units in the army can be elephants.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="06db-ed0a-6920-8da1" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7804-25c1-c816-b3cf" name="Savaran up to 50%+ of Cavalry" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e365-5c66-742c-13c0" name="Legion 50%+ of infantry" hidden="false">
+          <description>Up to half the cavalry units in the army can be Savaran Cataphracts .</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6f15-ad1f-07fd-5b27" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9dae-bfb7-c7b3-d2b3" name="Commander" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8abb-275d-5c3e-4e00" name="Commander Ld8" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Commander</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="54d2-a57c-b407-a735" name="New CategoryLink" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="42a6-aad5-c017-5de3" name="Skirmishers per division 50% of infantry" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="49e9-90a3-b02b-ddc2" name="Skirmishers per division 50% of infantry" hidden="false">
+          <description>Divisions may contain up to half as many skirmisher units as they contain non-skirmisher infantry. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f406-928d-e31b-c3a6" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="65aa-94d1-2528-da32" name="Heavy infantry up to 25% of infantry" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="d0fe-1952-ae73-03f5" name="Heavy infantry up to 25% of infantry" hidden="false">
+          <description>Up to a quarter of the non-skirmisher infantry units in the army can be heavy infantry.	</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3a8e-32ad-25f9-15c7" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45db-692d-4d33-2b2b" name="Savaran Cataphract Cav" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0e06-575b-4d55-2394" name="Savaran cataphract cavalry with bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ca6e-7fd1-a985-a1a9" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false"/>
+        <categoryLink id="e57d-bdc1-c812-ceef" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="e64e-adad-88c1-0662" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="1c7e-9071-e702-4093" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5709-85c5-1df3-7bef" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="33.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a68d-64ed-adb8-0862" name="Elephants" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="fe01-55e4-6386-2955" name="Elephants with javelin-armed crews" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">1</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Elephant:
+Defeated enemy reroll 1 dice for break tests
+Open order opponents +1 to hit
+Elephants giving ground stampede on D6 roll of 1
+Free move along road or as part of marching column
+Elephants cannotn support Cavalry
+Cavalry charging Elephants lose charge bonus and risk disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d2d9-cc71-ab69-67a6" name="New CategoryLink" hidden="false" targetId="66a6-4acc-9304-76ea" primary="true"/>
+        <categoryLink id="43d4-ef37-08a1-c72c" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e8a2-7ebb-55ab-a03d" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0dd0-3cc1-ba95-f1b6" name="Savaran Cataphract Cav (Kontos)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1496-edb7-fb01-c7d8" name="Savaran cataphract cavalry with kontos and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8d7f-9695-2776-a1fd" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false"/>
+        <categoryLink id="1072-bd66-7080-844e" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="dee0-dcb2-58e4-8f5c" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="d7d5-bde0-995c-3ec7" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="59dc-5ff4-452b-cb0c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="36.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad67-a848-64d2-4496" name="Savaran Cataphract Cav (El) (Stub)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="881f-470a-19b3-96e3" scope="roster" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="a862-8ce9-4fd0-1013" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c617-4273-2e68-773b" name="Savaran cataphract cavalry with bows (Elite) (Stubborn)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Stubborn - Re-roll one failed morale save if save is 6</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="99b7-cee3-241d-51ba" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false"/>
+        <categoryLink id="45be-c3f4-7739-56be" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="8f6d-5edb-02ea-c0c5" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="8bdf-4f96-5491-521a" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0462-c0b8-7935-ea5d" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="39.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a359-14cf-7180-acef" name="Savaran Cataphract Cav (Elite)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="bff6-6416-d4bb-d03b" name="Savaran cataphract cavalry with bows (elite)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Elite - Recover from disorder on D6 roll of 4+ at start of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="fee2-faf5-fdfe-cd6f" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false"/>
+        <categoryLink id="9310-f674-4478-c1c3" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="f26c-2858-3e10-1ad8" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="b5b4-f36e-0501-c5d5" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a984-08c3-1264-40f3" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="36.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fa5-bc5c-2dc6-f3c9" name="Savaran Cataphract Cav (El) (Stub) (Tgh)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0492-e99e-adfe-4c6e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cc81-da67-f98c-0501" name="Savaran cataphract cavalry with bows (Elite) (Stubborn) (Tough)" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">9</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Elite - Recover from disorder on D6 roll of 4+ at start of turn
+Stubborn - Re-roll one failed morale save if save is 6
+Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a198-df3b-62d2-a3d3" name="Cataphract" hidden="false" targetId="46df-9ba3-0812-957f" primary="false"/>
+        <categoryLink id="5a6b-a6ef-442c-2e2a" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="527c-7d4b-531b-9b15" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="b886-868d-92d6-491a" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1168-d50c-01e7-8289" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="40.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="870b-d0d5-b29d-60f9" name="Horse Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b063-fb14-8621-1a6a" name="Horse archers, fielded as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Parthian Shot - Can evade and make closing shots as a reaction to an enemy charge</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bb09-2f22-8066-b61c" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="335a-ee64-7d94-8995" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c17a-2ba7-50bc-579a" name="Lt Cav Javs &amp; Bows (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2d13-6b38-57ac-b731" name="Light cavalry with javelins and bows, fielded as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3deb-9d7d-5fbb-6fbd" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7842-66b2-a83a-5acc" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="21.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b09-e625-9afc-3daf" name="Lt Cav Javs (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6917-c9cb-5abd-8fe7" name="Light cavalry with javelins, fielded as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">6+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Feigned Flight - The unit is allowed to move out of a combat engagement</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ed94-42d3-5bfb-4d46" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="530e-ed0e-95af-dc96" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec76-c7fc-4e36-2acd" name="Med Inf (Levy)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7bfb-4d08-5bf9-60b2" name="Medium infantry levy with spears" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Levy - Must roll 4+ on a D6 to recover disorder at end of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3d21-7dd4-c379-e267" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="8a74-6ea9-b311-7f1a" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="520f-ca37-a282-6382" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c386-7fa4-e2de-1825" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="20.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc2f-1a85-77e9-c0bc" name="Med Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cf49-681a-2def-21d5" name="Medium infantry with spears" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f041-9d8a-589e-048d" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="17d8-947f-79cf-d853" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="8ab4-aa93-5090-0764" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="921d-6b0a-573f-fbcb" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5fd-81ad-bc13-ef9d" name="Med Inf (Levy) (Bows)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="970d-ff55-d1f8-7125" name="Medium infantry levy with mixed ranks of spears and bow" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Levy - Must roll 4+ on a D6 to recover disorder at end of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="357a-5ef9-20ad-9916" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="027a-046f-462f-a73c" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="b60f-ac0b-4714-533a" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0e12-b6ae-d9af-afc8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="23.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="04bc-a090-aee4-30e4" name="Med Inf Archers (Levy)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4383-aca7-e5c8-b5b2" name="Medium infantry levy archers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">5</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">5</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Levy - Must roll 4+ on a D6 to recover disorder at end of turn</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3f90-c2c6-42df-769f" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="bf57-3e81-a2ef-4d22" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="b1c3-7f9a-8a9c-ed32" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="de56-2df7-e139-a6aa" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="21.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0e7-81a3-d5c9-6c3d" name="Hvy Inf" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2905-57e0-56b0-67a3" name="Heavy infantry with spears" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7346-da42-91af-4ae7" name="Heavy Infantry" hidden="false" targetId="1850-fe5a-d411-015d" primary="false"/>
+        <categoryLink id="81fb-b774-7a75-870b" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="f8ae-6d43-260c-2340" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="2ba5-34af-71a3-5f16" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="1ba7-1264-94e4-4725" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f23f-ab7b-b71f-997b" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="26.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1be-5a64-37ff-851d" name="Hvy Inf (Bow)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3599-3e3a-7dfa-4d3e" name="Heavy infantry mixed ranks of spears and bows" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="87f5-0e70-a4a9-c6d7" name="Heavy Infantry" hidden="false" targetId="1850-fe5a-d411-015d" primary="false"/>
+        <categoryLink id="207d-8147-d5bc-fafd" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="6306-23d8-d6c6-fb2b" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="5a8a-ea21-ee96-83f1" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="0ade-3b91-a4ff-5738" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="811d-4853-9964-06c6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="29.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="150e-6c48-3603-1386" name="Hvy Inf (Tgh)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="117d-50e5-a5d4-a218" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f422-e99b-f99e-fae0" name="Heavy infantry with spears tough fighters" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a61c-6522-6d1d-cb34" name="Heavy Infantry" hidden="false" targetId="1850-fe5a-d411-015d" primary="false"/>
+        <categoryLink id="8bd1-0deb-4197-b7b6" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="6de4-ee54-0aa7-8c9d" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="9cb6-7b2e-3bb8-d33d" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="3783-6c47-8b20-7c02" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="478c-5401-5586-67ab" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="1.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="27.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72bf-cfd0-dba8-5df9" name="Lt Inf Archers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3704-563d-aa71-2192" name="Light infantry archers" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">4</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">3</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f3b2-15e8-1842-4fef" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="4fa8-f4b3-e2f5-9808" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="5e09-4889-0f4d-71a1" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4ec5-c652-8dc5-dfc8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="20.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a795-c00a-a6cf-37b1" name="Lt Inf Archers (Sml)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="387f-7000-f9ed-c179" name="Light infantry archers as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4fb2-917f-230c-1cb9" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="562c-38a4-cdc2-6599" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="012b-bf95-011e-fd9d" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f05b-ad87-8673-7f4c" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="14.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b5ea-df7a-6492-01c5" name="Skirmishers (Javs)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="78fe-927f-cd48-3aee" name="Skirmishers with javelins, fielded as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3c17-8f14-7ee4-e979" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="2c4f-e39d-558a-f46d" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9c70-d4da-9207-e9cd" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="11.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9378-dd80-9461-9a61" name="Skirmishers (Sling/Bow)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="49e6-6504-715a-f2e7" name="Skirmishers with slings or bows, fielded as small units" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0024-d886-ca24-6c57" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="32df-d303-ae9d-5a8a" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0c6d-4265-82d5-73d2" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c49d-e956-f2e1-6a2f" name="Elephants (Mixed-Arms)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="66dc-2903-e9e5-b0f1" name="Elephants with mixed-arms crews" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">4</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">1</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">1</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Elephant:
+Defeated enemy reroll 1 dice for break tests
+Open order opponents +1 to hit
+Elephants giving ground stampede on D6 roll of 1
+Free move along road or as part of marching column
+Elephants cannotn support Cavalry
+Cavalry charging Elephants lose charge bonus and risk disorder</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b1b2-bd3f-5d82-3d18" name="New CategoryLink" hidden="false" targetId="66a6-4acc-9304-76ea" primary="true"/>
+        <categoryLink id="b66a-988c-0b5c-74c7" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d480-96ec-258c-b021" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="1.0"/>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+        <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8812-b2ce-6870-fc67" name="Upgrade" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6968-04fd-6d0c-bdfc" name="Levy" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c85c-e742-c785-0764" name="Levy" hidden="false">
+              <description>Must roll 4+ on a D6 to recover disorder at end of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bb93-e43d-0b58-34d2" name="Brave" hidden="false">
+              <description>Shaken units rally on D6 roll of 4+ at end of command phase if more than 12&quot; from enemy</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="cba4-a709-50c7-aa60" name="Drilled" hidden="false">
+              <description>Free move on failed order. Units may move through other drilled units without risk of disorder</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1668-69bf-4aca-48c1" name="Elite" hidden="false">
+              <description>Recover from disorder on D6 roll of 4+ at start of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b7c5-8e76-96e0-c1e3" name="Fanatic" hidden="false">
+              <description>Morale Save +1 until shaken</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="71b7-bda7-c28b-e12a" name="Feigned Flight" hidden="false">
+              <description>The unit is allowed to move out of a combat engagement</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4d6a-292b-b8a1-105d" name="Frenzied Charge" hidden="false">
+              <description>Must charge if within range, with three moves allowed on any successful order/initiative</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dd5d-4e0d-178a-ee30" name="Freshly Raised" hidden="false">
+              <description>Check unit in first round of combat as per the Hail Caesar rulebook</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="21cb-796e-a9af-a9a5" name="Marauders" hidden="false">
+              <description>Ignore distance penalty for command</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ab90-a396-6e62-a237" name="Marksmen" hidden="false">
+              <description>Re-roll one missed ranged attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3176-096d-8d6a-350d" name="Militia" hidden="false">
+              <description>No move on roll equal to commander’s leadership when given orders</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8140-babb-4c43-04ee" name="Parthian Shot" hidden="false">
+              <description>Can evade and make closing shots as a reaction to an enemy charge</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3940-4378-9de1-58db" name="Steady" hidden="false">
+              <description>Ignore the first ‘6’ rolled for break tests from ranged attacks each turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="65dd-4792-026b-1feb" name="Stubborn 6+" hidden="false">
+              <description>Re-roll one failed morale save if save is 6</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f49b-44c6-278c-4223" name="Phalanx" hidden="false">
+              <description>Lost combats up to two count as draws until the unit is shaken </description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ca16-13d7-3be8-4258" name="Stubborn 5+" hidden="false">
+              <description>Re-roll one failed morale save if save is 5</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="2.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9ee3-74a7-9a76-b1e5" name="Wild Fighters" hidden="false">
+              <description>Re-roll up to three missed hand-to-hand combat attacks in their first round of combat</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="de71-298b-e935-1454" name="Stubborn 3+" hidden="false">
+              <description>Re-roll one failed morale save if save is 3</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="4.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4110-5123-40a6-9cc7" name="Valiant" hidden="false">
+              <description>Break test re-roll once per battle</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fa8f-e961-a11b-7291" name="Tough Fighters" hidden="false">
+              <description>Re-roll one missed hand-to-hand combat attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3fe1-1048-d162-532e" name="Stubborn 4+" hidden="false">
+              <description>Re-roll one failed morale save if save is 4</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Cataphract" typeId="e4dd-e575-0a8f-862f" value="0.0"/>
+            <cost name="Elephant" typeId="e04d-df89-0bb1-1f4a" value="0.0"/>
+            <cost name="Heavy Infantry" typeId="57ae-dd7e-5e8a-4e68" value="0.0"/>
+            <cost name="Cataphract Elite" typeId="881f-470a-19b3-96e3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
