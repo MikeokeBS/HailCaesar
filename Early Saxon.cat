@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="ed0d-162c-3a81-bc1b" name="Early Saxon" revision="2" battleScribeVersion="2.03" authorName="Michael Oke" library="false" gameSystemId="856f-b39f-b616-471f" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <costTypes>
+    <costType id="978f-ee34-fd2d-5afe" name="Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="0dc0-9d58-7884-5916" name="Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="acc1-bd8d-e6da-a8bc" name="Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9791-1a54-0cbf-1ce6" name="Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3800-df83-f0d8-bd42" name="Total Units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="de76-9644-2fb4-5752" name="Legion" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="b8ef-0831-51ed-a667" name="Artillery" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="2674-ced4-78f6-4eea" name="Artillery (L)" defaultCostLimit="0.0" hidden="true"/>
+    <costType id="2017-f20f-bd2b-97c7" name="Artillery (M)" defaultCostLimit="0.0" hidden="true"/>
+    <costType id="ba03-9173-45e5-7506" name="Artillery (H)" defaultCostLimit="0.0" hidden="true"/>
+    <costType id="b0c2-4fb3-b95e-4066" name="Infantry (Core)" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="5fd2-fbc9-dc09-18de" name="Pila" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="7954-b3bd-e1f2-c185" name="Non Skirmisher" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="3c1e-3531-74ce-d523" name="Warband" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="6c09-db92-e7fc-812a" name="Gesith  Infantry" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="55ab-8d7c-b496-3b8c" name="Gesith Cavalry" defaultCostLimit="-1.0" hidden="true"/>
+  </costTypes>
+  <forceEntries>
+    <forceEntry id="c5b5-f15f-44de-2eca" name="Early Saxon Detachment" publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+      <constraints>
+        <constraint field="7954-b3bd-e1f2-c185" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b64-cbd2-9e1e-5452" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6806-8cb1-4aa6-aefb" name="Configuration" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="false"/>
+        <categoryLink id="b76e-05b7-c412-e3fd" name="General" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c5-d949-5d5c-d918" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d115-8d26-f87c-f5e1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f12e-e6c8-82f7-87ce" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af81-7792-8b68-8d84" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="18a8-215d-1e1a-9c04" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+        <categoryLink id="1314-7da5-a83a-be11" name="Cavalry" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="false"/>
+        <categoryLink id="4ec2-a4dd-884e-198d" name="Skirmisher" hidden="false" targetId="2418-461b-1947-a0f1" primary="false">
+          <constraints>
+            <constraint field="selections" scope="ce9c-2f14-348c-270c" value="50.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="5fac-41a1-4c24-a77c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4a52-6993-1025-7ab7" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="75.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="852e-66b7-742f-0058" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fdb9-e6b0-ea09-222f" name="Gesith" hidden="false" targetId="3cb6-2a52-9c31-677d" primary="false">
+          <constraints>
+            <constraint field="6c09-db92-e7fc-812a" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="097e-3527-a78b-3ea9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0bd8-575c-e67e-528f" name="Gesith Cavalry" hidden="false" targetId="e2d6-130a-522d-2492" primary="false">
+          <constraints>
+            <constraint field="55ab-8d7c-b496-3b8c" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a582-8fdb-bb76-ac35" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="72aa-0551-2ffe-f2c0" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false">
+          <constraints>
+            <constraint field="3800-df83-f0d8-bd42" scope="roster" value="75.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="false" id="0214-97b2-311a-061f" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="e712-1280-b702-1a25" name="General" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aee-5e8a-5b93-15d1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="74ef-e541-0026-d6cb" name="General" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">General</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2eb7-babe-60a5-2ac1" name="New CategoryLink" hidden="false" targetId="89e8-b15f-c4bb-146d" primary="true"/>
+        <categoryLink id="df75-b721-4fef-3304" name="Commander" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="284a-a0f0-1a21-2746" name="Infantry 75%+" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7f29-0fb7-1173-5eec" name="Infantry 75%+" publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+          <description>At least three quarters of the units in the army must be infantry other than skirmishers.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="adfa-3563-d63f-dc81" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3703-83b1-e11b-fa73" name="Divisions 4+ units." publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="a00f-3459-a1fe-e79b" name="Divisions 4+ units." publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+          <description>Divisions must contain at least 4 units other than skirmishers and must be led by a commander. 
+Gesith must be included in the general’s division where present.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="45c9-eab9-6eda-759b" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1920-a9cc-b88e-56bc" name="CONFIG Config Rule 1" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2f9b-5e2c-33f7-93b3" name="Config Rule 1" publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+          <description>Config Rule 1</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="06db-ed0a-6920-8da1" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9dae-bfb7-c7b3-d2b3" name="Commander" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8abb-275d-5c3e-4e00" name="Commander Ld8" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">0</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">0</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Commander</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="54d2-a57c-b407-a735" name="New CategoryLink" hidden="false" targetId="a397-acf4-1bb0-aaa9" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="42a6-aad5-c017-5de3" name="Skirmishers per division 50% of infantry" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="49e9-90a3-b02b-ddc2" name="Skirmishers per division 50% of infantry" publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+          <description>Divisions may contain up to half as many skirmisher units as they contain non-skirmisher infantry. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f406-928d-e31b-c3a6" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a63-16ac-ef2d-e07c" name="Warband Saxon Med Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="5080-9da6-7d7f-a2c9" name="Saxon, Angle, Jute or Frisian medium infantry warbands with swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2279-9cb1-2b7b-ab9c" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="80f1-f2e5-06c2-4d78" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="b977-6593-c543-d4b8" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="3fc4-836e-b059-f5c9" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="3bda-11af-d211-d0aa" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ac26-e31c-69c9-c16a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68a6-9592-eabf-e3a2" name="Warband Angle Med Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="a0fb-c479-db35-4667" name="Saxon, Angle, Jute or Frisian medium infantry warbands with swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="55b7-0cf6-9fc4-74cc" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="b9a2-cb0b-6f1f-3453" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="5cc8-c0b9-7dae-b0bb" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="bc02-08f9-0eef-98b7" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="64df-7fd9-de40-2260" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f99e-4938-a013-88c7" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="34ea-7724-a779-d1dc" name="Warband Jute Med Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d671-23cf-b7ff-d509" name="Saxon, Angle, Jute or Frisian medium infantry warbands with swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="66a5-1b73-7f74-f183" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="1819-ca14-c317-0f97" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="0e08-6b8e-7eaf-afb3" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="cf9d-c153-d7c3-a8e6" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="266f-0fe8-fefe-81ec" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="08dd-3383-0a25-5c18" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3711-b666-8aa7-9172" name="Warband Frisian Med Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="b0a9-0afa-bb53-d1a8" name="Saxon, Angle, Jute or Frisian medium infantry warbands with swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6bfe-711d-f7de-3e02" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="4d25-4edd-e36e-6d92" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="adb5-c9d1-88c8-fd2f" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="5a06-a8a3-7d65-6fac" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="0381-ad68-093a-6c09" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c258-d2e2-2564-edf2" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="24.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7bd6-67a8-ebc9-f7ce" name="Warband Saxon Gesith Med Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db14-baf4-532b-48e7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0972-1735-9e7c-4868" name="Saxon Gesith medium infantry warband with swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e802-543c-a1f8-08f1" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="ef5f-25e9-c41f-f31a" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="b455-2f4b-a23b-97e9" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="e8f4-a2e5-ca36-9067" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="69d9-e178-484e-d391" name="Gesith" hidden="false" targetId="3cb6-2a52-9c31-677d" primary="false"/>
+        <categoryLink id="7360-ee01-82a7-4250" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fa97-c4d9-8cb0-b114" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="25.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="1.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fcf8-52a9-d521-2d5d" name="Saxon Gesith Hvy Inf" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d629-2988-b6ec-98ea" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8080-07c6-982d-4461" name="Saxon Gesith heavy infantry with swords and javelins non-warband" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="59af-f562-e2c4-505d" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="62b7-8cd4-7269-86a7" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="e848-a8b4-7cd5-c5c0" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="082a-d852-ae53-7026" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="920f-1985-2af0-46af" name="Gesith" hidden="false" targetId="3cb6-2a52-9c31-677d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9106-107e-cc2e-f5fb" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="27.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="1.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a19c-0d38-1837-d08e" name="Saxon Gesith Hvy Inf (Pila)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e0-7e36-44c4-ec32" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6dea-c598-c97b-bc1f" name="Saxon Gesith heavy infantry with heavy throwing spears (pila), swords and javelins non-warband" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">7</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">3</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cb7e-1e05-7cc8-55f0" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="0f01-f634-46da-94f0" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="66e1-3319-bf2b-9945" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="c073-8b2a-5f86-01f5" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="378f-a39b-7c07-716a" name="Gesith" hidden="false" targetId="3cb6-2a52-9c31-677d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2179-f2e6-653f-1ba8" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="30.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="1.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be7f-f927-553d-562f" name="Warband Saxon Gesith Med Inf (Pila)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab8-4753-9fc4-a9cd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7495-41c3-f7d3-ffcd" name="Saxon Gesith medium infantry warband with heavy throwing spears (pila), swords and javelins" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">8</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">6</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">6</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">Tough Fighters - Re-roll one missed hand-to-hand combat attack</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a24a-f727-5de4-19a9" name="New CategoryLink" hidden="false" targetId="ce9c-2f14-348c-270c" primary="true"/>
+        <categoryLink id="1ab7-54f9-88a9-1429" name="Infantry (Core)" hidden="false" targetId="ae43-4cce-7624-b0c8" primary="false"/>
+        <categoryLink id="4e5e-9332-8ed6-515c" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="413c-4ce0-6d1b-f2ee" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="1a07-ea26-4adf-eecc" name="Gesith" hidden="false" targetId="3cb6-2a52-9c31-677d" primary="false"/>
+        <categoryLink id="60d0-2fb2-94df-046f" name="Warband" hidden="false" targetId="7a99-6704-fc1f-6117" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e5b7-0e0f-112e-d6c7" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="28.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="1.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="1.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c421-5b01-e345-f61b" name="Gesith Med Cav (Sml)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0752-9c99-a159-a65c" name="Gesith medium cavalry with spears and/or javelins, fielded as a small unit" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">6</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">3</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">5+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9078-691f-d0e6-364f" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="1b85-8bae-6116-9725" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="f55b-9f08-6223-68d1" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="f115-2cd3-0d1d-8705" name="Gesith Cavalry" hidden="false" targetId="e2d6-130a-522d-2492" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6272-7c3c-b271-e0b6" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="19.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="333a-6708-89bd-62fc" name="Gesith Hvy Cav (Sml)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="3565-3b1c-e17c-c51b" name="Gesith medium cavalry with spears and/or javelins, fielded as a small unit, upgraded to heavy cavalry" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">7</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">4</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">4+</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3e02-d104-c682-1b9d" name="New CategoryLink" hidden="false" targetId="855f-b0b3-132a-a0f4" primary="true"/>
+        <categoryLink id="7bc5-688d-aa16-76a0" name="Unit" hidden="false" targetId="95eb-ecde-2e5b-47df" primary="false"/>
+        <categoryLink id="15fe-b2b6-ba2f-ffca" name="Non Skirmisher" hidden="false" targetId="3dcf-4e52-0976-be02" primary="false"/>
+        <categoryLink id="dfaa-bd27-12ba-6990" name="Gesith Cavalry" hidden="false" targetId="e2d6-130a-522d-2492" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d1ac-2701-e799-8e8a" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="22.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="1.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="1.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="824b-0461-3d05-4631" name="Skirmishers Javs (Sml)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6bf6-7b23-f245-1357" name="Skirmishers with javelins, fielded as small units" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">3</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">0</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="dbbe-ba9e-e950-4f1e" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="7533-e8e6-d2c4-f226" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0583-1d91-1b40-1246" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="11.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf30-9b54-0ba7-9f41" name="Skirmishers Slings (Sml)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbab-78f9-50ea-9c41" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fac8-7a86-eb65-38d7" name="Skirmishers with slings, fielded as a small unit" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a3b4-9d7e-c8bf-1674" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="4305-88b3-0a01-a953" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8141-fa10-88b7-be80" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8de4-a1ce-2f4c-a6dd" name="Skirmishers Bows (Sml)" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e15-67cb-a50d-1939" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0c6e-a63a-2495-f72e" name="Skirmishers with bows, fielded as a small unit" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" typeId="3e6e-9c49-822a-7751" typeName="Unit Stats">
+          <characteristics>
+            <characteristic name="Clash" typeId="f580-3b7c-fb52-be21">2</characteristic>
+            <characteristic name="Sustained" typeId="92bf-d55d-4940-5243">2</characteristic>
+            <characteristic name="Short Range" typeId="2c78-6576-293b-6c36">2</characteristic>
+            <characteristic name="Long Range" typeId="6161-d8a5-5fd1-b1e1">2</characteristic>
+            <characteristic name="Morale Save" typeId="f561-29d9-da58-3f20">0</characteristic>
+            <characteristic name="Stamina" typeId="a3cc-b502-0746-f8f0">4</characteristic>
+            <characteristic name="Special" typeId="6a99-6c3f-7565-fd86">-</characteristic>
+            <characteristic name="Leadership" typeId="97fb-d3d4-c985-5c64">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="aef3-0914-5218-8f47" name="New CategoryLink" hidden="false" targetId="2418-461b-1947-a0f1" primary="true"/>
+        <categoryLink id="045d-f4ec-742f-3902" name="Infantry" hidden="false" targetId="ce9c-2f14-348c-270c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9cd2-b957-fd41-e0da" name="Upgrade" hidden="false" collective="false" import="true" targetId="8812-b2ce-6870-fc67" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="12.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="1.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="1.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="1.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b953-076a-b549-ddae" name="Warbands 75%+" publicationId="6649-55bc-f47a-0631" page="13" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="f38a-9a62-4646-48b8" name="Warbands 75%+" publicationId="6649-55bc-f47a-0631" page="13" hidden="false">
+          <description>At least three quarters of the non-skirmisher units in the army must be warbands, whether basic 
+medium infantry or Gesith.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c2e6-ea8e-e2c9-036f" name="New CategoryLink" hidden="false" targetId="3a14-ec7d-4efd-56f8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="0.0"/>
+        <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+        <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+        <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+        <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+        <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+        <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+        <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+        <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+        <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+        <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+        <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+        <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+        <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+        <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+        <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+        <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="8812-b2ce-6870-fc67" name="Upgrade" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="6968-04fd-6d0c-bdfc" name="Levy" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c85c-e742-c785-0764" name="Levy" hidden="false">
+              <description>Must roll 4+ on a D6 to recover disorder at end of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad18-4b14-a8ac-1686" name="Brave" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bb93-e43d-0b58-34d2" name="Brave" hidden="false">
+              <description>Shaken units rally on D6 roll of 4+ at end of command phase if more than 12&quot; from enemy</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6825-0af9-5180-423c" name="Drilled" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="cba4-a709-50c7-aa60" name="Drilled" hidden="false">
+              <description>Free move on failed order. Units may move through other drilled units without risk of disorder</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b3e-b0d7-915c-8635" name="Elite" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1668-69bf-4aca-48c1" name="Elite" hidden="false">
+              <description>Recover from disorder on D6 roll of 4+ at start of turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f14e-6c10-b6c7-00a9" name="Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b7c5-8e76-96e0-c1e3" name="Fanatic" hidden="false">
+              <description>Morale Save +1 until shaken</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4045-8e80-22e5-4f0e" name="Feigned Flight" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="71b7-bda7-c28b-e12a" name="Feigned Flight" hidden="false">
+              <description>The unit is allowed to move out of a combat engagement</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1bdf-13f5-0e09-bc90" name="Frenzied Charge" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4d6a-292b-b8a1-105d" name="Frenzied Charge" hidden="false">
+              <description>Must charge if within range, with three moves allowed on any successful order/initiative</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ba6-8ae8-f31e-cc00" name="Freshly Raised" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="dd5d-4e0d-178a-ee30" name="Freshly Raised" hidden="false">
+              <description>Check unit in first round of combat as per the Hail Caesar rulebook</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6aeb-aef8-1b4a-4b72" name="Marauders" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="21cb-796e-a9af-a9a5" name="Marauders" hidden="false">
+              <description>Ignore distance penalty for command</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf0c-3c85-3547-16c5" name="Marksmen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ab90-a396-6e62-a237" name="Marksmen" hidden="false">
+              <description>Re-roll one missed ranged attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59f1-e692-523c-6824" name="Militia" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3176-096d-8d6a-350d" name="Militia" hidden="false">
+              <description>No move on roll equal to commander’s leadership when given orders</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="-3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89c6-9416-66b1-fbf6" name="Parthian Shot" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8140-babb-4c43-04ee" name="Parthian Shot" hidden="false">
+              <description>Can evade and make closing shots as a reaction to an enemy charge</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="202d-20e2-094b-b465" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3940-4378-9de1-58db" name="Steady" hidden="false">
+              <description>Ignore the first ‘6’ rolled for break tests from ranged attacks each turn</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8930-beee-96bd-3272" name="Stubborn 6+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="65dd-4792-026b-1feb" name="Stubborn 6+" hidden="false">
+              <description>Re-roll one failed morale save if save is 6</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="18b2-28d8-fc8d-558f" name="Phalanx" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f49b-44c6-278c-4223" name="Phalanx" hidden="false">
+              <description>Lost combats up to two count as draws until the unit is shaken </description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b57-30e1-245f-b9da" name="Stubborn 5+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ca16-13d7-3be8-4258" name="Stubborn 5+" hidden="false">
+              <description>Re-roll one failed morale save if save is 5</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="2.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="888c-f937-d9d0-93b3" name="Wild Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9ee3-74a7-9a76-b1e5" name="Wild Fighters" hidden="false">
+              <description>Re-roll up to three missed hand-to-hand combat attacks in their first round of combat</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b154-48b2-b96f-0752" name="Stubborn 3+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="de71-298b-e935-1454" name="Stubborn 3+" hidden="false">
+              <description>Re-roll one failed morale save if save is 3</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="4.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="25eb-128c-e98f-8735" name="Valiant" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="4110-5123-40a6-9cc7" name="Valiant" hidden="false">
+              <description>Break test re-roll once per battle</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2ab5-ad8f-39fd-b2d2" name="Tough Fighters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fa8f-e961-a11b-7291" name="Tough Fighters" hidden="false">
+              <description>Re-roll one missed hand-to-hand combat attack</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="1.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d155-7806-1a82-e2cd" name="Stubborn 4+" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3fe1-1048-d162-532e" name="Stubborn 4+" hidden="false">
+              <description>Re-roll one failed morale save if save is 4</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="978f-ee34-fd2d-5afe" value="3.0"/>
+            <cost name="Cavalry" typeId="acc1-bd8d-e6da-a8bc" value="0.0"/>
+            <cost name="Total Units" typeId="3800-df83-f0d8-bd42" value="0.0"/>
+            <cost name="Infantry" typeId="0dc0-9d58-7884-5916" value="0.0"/>
+            <cost name="Skirmisher" typeId="9791-1a54-0cbf-1ce6" value="0.0"/>
+            <cost name="Legion" typeId="de76-9644-2fb4-5752" value="0.0"/>
+            <cost name="Artillery" typeId="b8ef-0831-51ed-a667" value="0.0"/>
+            <cost name="Artillery (L)" typeId="2674-ced4-78f6-4eea" value="0.0"/>
+            <cost name="Artillery (M)" typeId="2017-f20f-bd2b-97c7" value="0.0"/>
+            <cost name="Artillery (H)" typeId="ba03-9173-45e5-7506" value="0.0"/>
+            <cost name="Infantry (Core)" typeId="b0c2-4fb3-b95e-4066" value="0.0"/>
+            <cost name="Pila" typeId="5fd2-fbc9-dc09-18de" value="0.0"/>
+            <cost name="Cost" typeId="69d9-fe84-28ff-1ba9" value="0.0"/>
+            <cost name="Non Skirmisher" typeId="7954-b3bd-e1f2-c185" value="0.0"/>
+            <cost name="Warband" typeId="3c1e-3531-74ce-d523" value="0.0"/>
+            <cost name="Gesith  Infantry" typeId="6c09-db92-e7fc-812a" value="0.0"/>
+            <cost name="Gesith Cavalry" typeId="55ab-8d7c-b496-3b8c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

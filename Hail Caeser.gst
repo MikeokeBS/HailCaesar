@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="5" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="856f-b39f-b616-471f" name="Hail Caeser" revision="6" battleScribeVersion="2.03" authorName="Michael Oke" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="c3d5-580a-cc64-af21" name="Hail Caeser Core Rulebook"/>
     <publication id="8269-29c8-ecfa-1b1d" name="Army Lists: Biblical &amp; Classical"/>
@@ -46,6 +46,17 @@
     <categoryEntry id="95eb-ecde-2e5b-47df" name="Unit" hidden="false"/>
     <categoryEntry id="3dcf-4e52-0976-be02" name="Non Skirmisher" hidden="false"/>
     <categoryEntry id="46df-9ba3-0812-957f" name="Cataphract" hidden="false"/>
+    <categoryEntry id="a2ca-60ed-070e-6e11" name="Medium Infantry" hidden="false"/>
+    <categoryEntry id="1850-fe5a-d411-015d" name="Heavy Infantry" hidden="false"/>
+    <categoryEntry id="66a6-4acc-9304-76ea" name="Elephant" hidden="false"/>
+    <categoryEntry id="8cf3-3a2c-615c-628f" name="Heavy Cavalry" hidden="false"/>
+    <categoryEntry id="7a99-6704-fc1f-6117" name="Warband" hidden="false"/>
+    <categoryEntry id="3cb6-2a52-9c31-677d" name="Gesith" hidden="false"/>
+    <categoryEntry id="e2d6-130a-522d-2492" name="Gesith Cavalry" hidden="false"/>
+    <categoryEntry id="01f7-e236-5051-e5d0" name="Alamanni Medium Infantry" hidden="false"/>
+    <categoryEntry id="6601-a0c3-b60d-d543" name="Burgundian Medium Infantry" hidden="false"/>
+    <categoryEntry id="b2b2-12c2-1304-5c6e" name="Alamanni Tough Medium Infantry" hidden="false"/>
+    <categoryEntry id="06af-698e-4c49-0430" name="Burgundian Tough Medium Infantry" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="0959-ad13-b4bf-a152" name="XXX Do Not Use Hail Caeser Detachment" hidden="false">
